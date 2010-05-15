@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <!-- Haut gauche -->
+  <submodel>
+    <name>left-up-tracer</name>
+    <model>Aircraft/Gloster-Meteor/Models/effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> 13.87 </x-offset> <!-- -4.229 m = 13.87 ft -->
+    <y-offset>  1.56 </y-offset> <!-- -0.475 m =  1.56 ft -->
+    <z-offset> -0.85 </z-offset> <!-- -0.258 m = -0.85 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Gloster-Meteor/Models/effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Haut droite -->
+  <submodel>
+    <name>right-up-tracer</name>
+    <model>Aircraft/Gloster-Meteor/Models/effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 13.87 </x-offset> <!-- -4.229 m = 13.87 ft -->
+    <y-offset> -1.56 </y-offset> <!--  0.475 m = -1.56 ft -->
+    <z-offset> -0.85 </z-offset> <!-- -0.258 m = -0.85 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Gloster-Meteor/Models/effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!-- Bas gauche -->
+  <submodel>
+    <name>left-down-tracer</name>
+    <model>Aircraft/Gloster-Meteor/Models/effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.6</delay>
+    <count>-1</count>
+    <x-offset> 13.87 </x-offset> <!-- -4.229 m = 13.87 ft -->
+    <y-offset>  1.56 </y-offset> <!-- -0.475 m =  1.56 ft -->
+    <z-offset> -1.91 </z-offset> <!-- -0.581 m = -1.91 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Gloster-Meteor/Models/effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+  <!--Bas droite -->
+  <submodel>
+    <name>right-down-tracer</name>
+    <model>Aircraft/Gloster-Meteor/Models/effects/guns/apibullet-tracer.xml</model>
+    <trigger>controls/armament/trigger</trigger>
+    <speed>2460.0</speed>
+    <repeat>true</repeat>
+    <delay>0.62</delay>
+    <count>-1</count>
+    <x-offset> 13.87 </x-offset> <!-- -4.229 m = 13.87 ft -->
+    <y-offset> -1.56 </y-offset> <!--  0.475 m = -1.56 ft -->
+    <z-offset> -1.91 </z-offset> <!-- -0.581 m = -1.91 ft -->
+    <yaw-offset> 0.0 </yaw-offset>
+    <pitch-offset> 0.1 </pitch-offset>
+    <life>4.0</life>
+    <wind>false</wind>
+    <weight>0.07495</weight>
+    <cd>0.193</cd>
+    <eda>0.00571198</eda> 
+    <collision>true</collision>
+    <collision-report>sim/ai/aircraft/collision/gun</collision-report>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Gloster-Meteor/Models/effects/guns/bullet-submodel.xml</submodel-path>
+  </submodel>
+
+</PropertyList>

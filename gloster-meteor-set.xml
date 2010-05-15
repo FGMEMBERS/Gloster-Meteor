@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- <PropertyList include="gloster-meteor-jsbsim-cnf.xml"> -->
+<PropertyList include="gloster-meteor-yasim-cnf.xml">
+
+  <sim>
+    <description>Gloster Meteor</description>
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+  </sim>
+
+</PropertyList>
+
