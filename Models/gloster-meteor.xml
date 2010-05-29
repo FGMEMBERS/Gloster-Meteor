@@ -32,9 +32,13 @@
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAG</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
@@ -74,9 +78,13 @@
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
     <object-name>porteAG</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
     <object-name>axeGH</object-name>
     <object-name>axeGB</object-name>
     <object-name>roueG</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
     <object-name>axeDH</object-name>
     <object-name>axeDB</object-name>
     <object-name>roueD</object-name>
@@ -151,6 +159,10 @@
     <object-name>bosses</object-name>
     <object-name>antenne</object-name>
     <object-name>pito</object-name>
+    <object-name>porteG1</object-name>
+    <object-name>porteG2</object-name>
+    <object-name>porteD1</object-name>
+    <object-name>porteD2</object-name>
   </effect>
 
   <animation>
@@ -534,6 +546,82 @@
       <x2-m> -4.421 </x2-m>
       <y2-m>  0.180 </y2-m>
       <z2-m> -0.904 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG1</object-name>
+    <property>/gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -100 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -2.043 </x1-m>
+      <y1-m> -1.703 </y1-m>
+      <z1-m> -0.834 </z1-m>
+      <x2-m> -1.768 </x2-m>
+      <y2-m> -1.703 </y2-m>
+      <z2-m> -0.847 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteG2</object-name>
+    <property>/gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 95 </dep></entry>
+      <entry><ind> 0.9 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.829 </x1-m>
+      <y1-m> -0.263 </y1-m>
+      <z1-m> -0.907 </z1-m>
+      <x2-m> -1.448 </x2-m>
+      <y2-m> -0.263 </y2-m>
+      <z2-m> -0.877 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD1</object-name>
+    <property>/gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1.0 </ind><dep> -100 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.768 </x1-m>
+      <y1-m>  1.703 </y1-m>
+      <z1-m> -0.847 </z1-m>
+      <x2-m> -2.043 </x2-m>
+      <y2-m>  1.703 </y2-m>
+      <z2-m> -0.834 </z2-m>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>porteD2</object-name>
+    <property>/gear/gear[1]/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.0 </ind><dep>  0 </dep></entry>
+      <entry><ind> 0.2 </ind><dep> 95 </dep></entry>
+      <entry><ind> 0.9 </ind><dep> 95 </dep></entry>
+      <entry><ind> 1.0 </ind><dep>  0 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -1.448 </x1-m>
+      <y1-m>  0.263 </y1-m>
+      <z1-m> -0.877 </z1-m>
+      <x2-m> -1.829 </x2-m>
+      <y2-m>  0.263 </y2-m>
+      <z2-m> -0.907 </z2-m>
     </axis>
   </animation>
 
