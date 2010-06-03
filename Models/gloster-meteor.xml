@@ -135,7 +135,7 @@
   </animation>
 
   <effect>
-    <inherits-from>Aircraft/Gloster-Meteor/Models/effects/Glosterreflect</inherits-from>
+    <inherits-from>Aircraft/Generic/Effects/Fuselagereflect</inherits-from>
     <object-name>fuselage</object-name>
     <object-name>ailes</object-name>
     <object-name>freinG</object-name>
