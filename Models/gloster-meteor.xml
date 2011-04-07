@@ -42,7 +42,7 @@
     <object-name>direction</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
-    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
     <object-name>porteG1</object-name>
     <object-name>porteG2</object-name>
     <object-name>porteD1</object-name>
@@ -89,7 +89,7 @@
     <object-name>direction</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
-    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
     <object-name>porteG1</object-name>
     <object-name>porteG2</object-name>
     <object-name>porteD1</object-name>
@@ -165,7 +165,7 @@
     <object-name>direction</object-name>
     <object-name>porteA</object-name>
     <object-name>porteAG</object-name>
-    <object-name>porteAG</object-name>
+    <object-name>porteAD</object-name>
     <object-name>porteG1</object-name>
     <object-name>porteG2</object-name>
     <object-name>porteD1</object-name>
