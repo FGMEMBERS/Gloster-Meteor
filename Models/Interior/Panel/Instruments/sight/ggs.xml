@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+  <!-- gyro gun sight -->
+  <PropertyList> 
+    <path>ggs-mod1.ac</path>
+    
+    
+<animation>
+  <type>scale</type>
+  <x-offset>0.75</x-offset>
+  <y-offset>0.75</y-offset>
+  <z-offset>0.75</z-offset>
+ </animation>
+    
+	<animation> 
+      <type>material</type>
+      <emission> 
+        <factor-prop>/controls/lighting/panel-norm</factor-prop>
+        <red>0.4</red>
+        <green>0.20</green>
+        <blue>0.20</blue>
+      </emission>
+    </animation>
+    
+
+  </PropertyList>

@@ -22,21 +22,23 @@
     <object-name>intverriere2</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>intverriere</object-name>
-    <object-name>intverriere2</object-name>
-  </animation>
-
   <!-- Pilote -->
-  <model>
+<!--  <model>
     <path>Aircraft/Gloster-Meteor/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -3.762 </x-m>
+      <x-m> -3.90 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.010 </z-m>
+      <z-m>  0.03 </z-m>
+    </offsets>
+  </model>
+-->  
+    
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/seat/seat.xml</path>
+    <offsets>
+      <x-m> -3.70 </x-m>
+      <y-m> -0.00 </y-m>
+      <z-m>  -0.10 </z-m>
     </offsets>
   </model>
 
@@ -44,9 +46,9 @@
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -4.661 </x-m>
+      <x-m> -4.36 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.099 </z-m>
+      <z-m>  0.17 </z-m>
     </offsets>
   </model>
 

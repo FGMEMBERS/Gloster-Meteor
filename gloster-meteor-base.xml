@@ -4,11 +4,9 @@
 
   <sim  include="Nasal/views.xml">
  
-    <author>Emmanuel BARANGER (3D/FDM)</author>
-    <status>alpha</status>
-  
-    <fuel-fraction>1.0</fuel-fraction>
-  
+    <author>Emmanuel BARANGER (3D/YASim FDM)</author>
+    <author>Ron Jensen (JSBSim FDM)</author>
+
     <sound>
       <audible>true</audible>
       <path>Aircraft/Gloster-Meteor/Sounds/gloster-meteor-sound.xml</path>
@@ -47,7 +45,7 @@
     </multiplay>
 
     <help>
-      <title>Messerschmitt Me 262</title>
+      <title>Gloster Meteor F.3</title>
       <key>
         <name>d</name>
         <desc>Open/Close canopy</desc>
@@ -62,12 +60,6 @@
 
   </sim>
 
-  <yasim>
-    <gloster-meteor>
-      <pilot-lb>128</pilot-lb>
-    </gloster-meteor>
-  </yasim>
-
   <engines>
     <engine n="0">
       <engine-num type="int">0</engine-num>
@@ -79,19 +71,10 @@
     </engine>
   </engines>
 
-  <consumables>
-    <fuel>
-      <tank n="0">
-        <tank-num type="int">0</tank-num>
-        <level-gal_us archive="y">2070</level-gal_us>
-      </tank>
-    </fuel>
-  </consumables>
-
   <controls>
     <armament>
      <trigger type="bool">false</trigger>
-     <master-arm type="bool">true</master-arm>
+     <master-arm type="bool">false</master-arm>
      <position-norm type="int">1</position-norm>
     </armament>
   </controls>
@@ -99,15 +82,18 @@
   <input>
     <keyboard include="Nasal/gloster-meteor-keyboard.xml"/>
   </input>
- 
+
   <nasal>
     <doors>
       <file>Aircraft/Gloster-Meteor/Nasal/doors.nas</file>
     </doors>
     <glostermeteor>
       <file>Aircraft/Gloster-Meteor/Nasal/liveries.nas</file>
-    </glostermeteor>
-    <guns>
+   </glostermeteor>
+   <dialogs>
+      <file>Aircraft/Gloster-Meteor/Nasal/engines.nas</file>
+   </dialogs>
+   <guns>
       <file>Aircraft/Gloster-Meteor/Nasal/weapons.nas</file>
       <file>Aircraft/Gloster-Meteor/Nasal/revi.nas</file>
     </guns>

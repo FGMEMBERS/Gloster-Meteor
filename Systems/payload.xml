@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<!-- 
+
+     The Mk. II Hispano fired a 130 gram (4.58 oz) 20 mm x 110 mm projectile
+     with a muzzle velocity between 840 and 880 m/s (2,750 and 2,900 ft/s),
+     depending on barrel length. Rate of fire was between 600 and 850 rounds
+     per minute. It was 2.36 m (7 ft 9 in) long, weighing between 42 and 50 kg
+     (93 and 110 lb).
+     
+     x=(v/2)t
+     x/t=v/2
+     t/x=2/v
+     t=2x/v
+     
+     x=7.75 ft
+     v=2800ft/s
+     t=5.5 milliseconds
+
+     v=at
+     a=v/t
+     a=5.1e5ft/s^2
+     
+     f=ma
+     f=130g*5.1e5ft/s^2
+     f=4540lbf
+     
+     So, the external force system needs to apply a 4540 lbf for 5 milliseconds for every round fired.
+     
+     600RPMx4 = 40Hz or every 0.025 seconds
+     Doing two 'guns' one on each side, each gun fires every 0.05 seconds
+-->
+<system name="payload">
+
+  <property value="160">payload/gun/rounds[0]</property>
+  <property value="160">payload/gun/rounds[1]</property>
+  <property value="160">payload/gun/rounds[2]</property>
+  <property value="160">payload/gun/rounds[3]</property>
+
+  <property value="0">payload/ventral-tank/installed-bool</property>
+
+  <channel name="gun">
+  
+   <fcs_function name="payload/gun/rounds-total">
+    <function>
+     <sum>
+      <property>payload/gun/rounds[0]</property>
+      <property>payload/gun/rounds[1]</property>
+      <property>payload/gun/rounds[2]</property>
+      <property>payload/gun/rounds[3]</property>
+     </sum>
+    </function>
+   </fcs_function>
+
+   <pure_gain name="payload/gun/rounds-lbs">
+    <input>payload/gun/rounds-total</input>
+    <gain>0.625</gain>
+    <output>inertia/pointmass-weight-lbs[3]</output>
+   </pure_gain>
+  </channel>
+
+  <channel name="Ventral Tank">
+   <pure_gain name="payload/ventral-tank/installed-lbs">
+    <input>payload/ventral-tank/installed-bool</input>
+    <gain> 262 </gain>
+    <output>inertia/pointmass-weight-lbs[2]</output>     
+   </pure_gain>
+
+  </channel>
+
+  <channel name="asi">
+   <pure_gain name="/instrumentation/airspeed-indicator/indicated-speed-mph">
+    <input>velocities/vc-kts</input>
+    <gain>1.1507794</gain>
+   </pure_gain>
+  </channel>
+
+</system>

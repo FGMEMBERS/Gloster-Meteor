@@ -1,79 +1,103 @@
-<?xml version="1.0" encoding="UTF-8"?>
-
-<PropertyList>
-
-  <path>turn.ac</path>
-
-  <animation>
-    <object-name>fond</object-name>
-    <object-name>BallEnclosure</object-name>
-    <object-name>face</object-name>
-    <object-name>ball</object-name>   
-    <object-name>compass</object-name>   
-
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>noshadow</type>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <object-name>vitre</object-name>
-  </animation>
-
-  <animation>
-    <type>material</type>
-    <object-name>face</object-name>
-    <object-name>ball</object-name>   
-    <object-name>compass</object-name>   
-    <emission>
-      <red>   1.0 </red>
-      <green> 0.2 </green>
-      <blue>  0.0 </blue>
-      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
-      <factor-prop>/sim/model//material/instruments/factor</factor-prop>
-    </emission>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>ball</object-name>
-    <property>/instrumentation/slip-skid-ball/indicated-slip-skid</property>
-    <factor>21</factor>
-    <min-deg>-15</min-deg>
-    <max-deg>15</max-deg>
-    <center>
-      <x-m> 1.00 </x-m>
-      <y-m> 0.00 </y-m>
-      <z-m> 0.05 </z-m>
-    </center>
-    <axis>
-      <x> -1 </x>
-      <y>  0 </y>
-      <z>  0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>rotate</type>
-    <object-name>compass</object-name>
-    <property>/instrumentation/magnetic-compass/indicated-heading-deg</property>
-    <center>
-      <x-m> -0.022 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m>  0.000 </z-m>
-    </center> 
-    <axis>
-      <x> 0 </x>
-      <y> 0 </y>
-      <z> 1 </z>
-    </axis>
-  </animation>
-
-</PropertyList>
-
+<?xml version="1.0"?>
+  <!-- turn and slip indicator -->
+  <PropertyList> 
+    <path>turn.ac</path>
+    
+    <animation>
+  <type>scale</type>
+  <x-offset>0.6</x-offset>
+  <y-offset>0.6</y-offset>
+  <z-offset>0.6</z-offset>
+ </animation>
+    
+    <animation> 
+      <type>rotate</type>
+      <object-name>Needle1</object-name>
+      <property>instrumentation/slip-skid-ball/indicated-slip-skid</property>
+      <interpolation> 
+        <entry> 
+          <ind>-3</ind>
+          <dep>-30</dep>
+        </entry>
+        <entry> 
+          <ind>0</ind>
+          <dep>0</dep>
+        </entry>
+        <entry> 
+          <ind>3</ind>
+          <dep>30</dep>
+        </entry>
+      </interpolation>
+      <axis> 
+        <x>-1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
+    <animation> 
+      <type>rotate</type>
+      <object-name>Needle2</object-name>
+      <property>instrumentation/turn-indicator/indicated-turn-rate</property>
+      <interpolation> 
+        <entry> 
+          <ind>-4</ind>
+          <dep>-60</dep>
+        </entry>
+        <entry> 
+          <ind>-3</ind>
+          <dep>-45</dep>
+        </entry>
+        <entry> 
+          <ind>-2</ind>
+          <dep>-30</dep>
+        </entry>
+        <entry> 
+          <ind>-1</ind>
+          <dep>-15</dep>
+        </entry>
+        <entry> 
+          <ind>0</ind>
+          <dep>0</dep>
+        </entry>
+        <entry> 
+          <ind>1</ind>
+          <dep>15</dep>
+        </entry>
+        <entry> 
+          <ind>2</ind>
+          <dep>30</dep>
+        </entry>
+        <entry> 
+          <ind>3</ind>
+          <dep>45</dep>
+        </entry>
+		<entry> 
+          <ind>4</ind>
+          <dep>60</dep>
+        </entry>
+      </interpolation>
+      <axis> 
+        <x>1</x>
+        <y>0</y>
+        <z>0</z>
+      </axis>
+    </animation>
+	<animation> 
+      <type>material</type>
+      <emission> 
+        <factor-prop>controls/lighting/panel-norm</factor-prop>
+        <red>0.75</red>
+        <green>0.25</green>
+        <blue>0.25</blue>
+      </emission>
+    </animation>
+    <animation> 
+	  <type>noshadow</type>
+    </animation>
+    <!-- *** LoD *** -->
+    <animation> 
+      <type>range</type>
+      <min-m>0</min-m>
+      <max-m>5</max-m>
+    </animation>
+  </PropertyList>

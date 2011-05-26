@@ -1,0 +1,92 @@
+DIM M
+DERIV RAD
+#BUILD
+
+ $FLTCON WT=5500., 
+     LOOP=2.0, 
+     NMACH=1.0, MACH(1)=0.8,
+     NALT=1.0,  ALT(1)=4500.,
+     NALPHA=20.0,
+     ALSCHD(1)= -16.0, -8.0, -6.0, -4.0, -2.0, -1.0, 0.0, 1.0, 2.0,  4.0, 6.0,
+         8.0, 10.0, 12.0, 14.0, 16.0, 18.0, 19.0, 20.0, 21.0,
+#     NALPHA=4.0,
+#     ALSCHD(1)= -0.4,1.,2.,4.5,
+     STMACH=0.7, TSMACH=1.4, TR=1.0$
+
+ $OPTINS ROUGFC=0.25E-3, SREF=34.75, CBARR=2.7, BLREF=13.1$
+
+ $SYNTHS XCG=-2.42824, ZCG=-0.48768,
+         XW=-3.014,ZW=-0.65, ALIW=1.0,
+         XH= 4.47, ZH=1.116, ALIH=0.0,
+         XV=3.94, XVF=4.17, SCALE=1.0, VERTUP=.FALSE.$
+* Body
+ $BODY NX=9.0,
+       X(1) =-6.195, -5.678, -4.728,-4.178,-3.588,-2.600, 0.011, 3.212, 4.955,
+       ZU(1)=-0.283,  0.006,  0.215, 0.595, 0.675, 0.435, 0.435, 0.435, 0.355,
+       ZL(1)=-0.612, -0.790, -0.872,-0.913,-0.954,-0.954,-0.760,-0.392,-0.081,
+       R(1) = 0.157,  0.370,  0.522, 0.581, 0.628, 0.675, 0.675, 0.425, 0.194,
+       S(1) = 0.082,  0.476,  0.921, 1.412, 1.651, 1.524, 1.279, 0.549, 0.132,
+       P(1) = 1.032,  4.927,  9.864, 9.540,12.277,12.948,12.580, 6.578, 1.308,
+       BNOSE=1.0, BTAIL=2.0,
+       BLN=1.5,   BLA=2.5,
+       ITYPE=3.0, METHOD=1.0$
+
+ $WGPLNF CHRDTP=1.25, CHRDR=3.7,CHRDBP=3.0,
+         SSPNE=5.736, SSPN=6.406,SSPNOP=3.415,
+         SAVSI=3.,SAVSO=11.,  CHSTAT=0.0,
+         TWISTA=-2.0, DHDADI=0.8,DHDADO=6.0,  TYPE=1.0$
+
+* Gloster 41 Meteor I                                        EC(12.5)40/0640                          EC1040/0640
+* Gloster 43 Meteor Trainer                                  EC(12.5)40/0640                          EC1040/0640
+* http://www.ae.illinois.edu/m-selig/ads/aircraft.html
+* H and V are NACA 0009
+
+#NACA W 6 63A211! Average
+NACA W 4 0411! Best guess
+
+CASEID ----- C-140 Wing Body ----- 
+#DAMP
+SAVE
+#DUMP DYN
+NEXT CASE
+
+* TDCS 2A15 says flaps are 20 or 50
+# $SYMFLP NDELTA=5.0,DELTA(1)=0.,10.,20.,35.,50.,
+#         SPANFI=1.696,
+#         SPANFO=5.623,
+#         CHRDFI=.232,
+#         CHRDFO=.215,
+#
+#         FTYPE=3.0,
+#         CB=.001125,
+#         TC=.00225,
+#         PHETEP=.0391,
+#         PHETE=.0522,
+#         NTYPE=1.$
+
+#CASEID ----- C-140 PLAIN WING FLAPS ----- 
+#SAVE
+#DUMP FCM
+#NEXT CASE
+
+ $HTPLNF TYPE=1.0,    CHRDR=1.74,CHRDTP=0.96,
+         SSPNE=2.02, SSPN=2.28, SAVSI=14.5,
+         CHSTAT=0.0, TWISTA=0.0, DHDADI=0.0,
+         SHB=0., SEXT=0., RLPH=6.66$ ! I Guessed at these numbers
+
+NACA H 4 0009
+
+ $VTPLNF TYPE=1.0,   CHRDR=2.3, CHRDBP=1.78, CHRDTP=0.71,
+         SSPNE=1.55, SSPN=1.9,SSPNOP=.92,
+         SAVSI=27.0,SAVSO=37.0, CHSTAT=0.0$
+
+NACA V 4 0009
+ $VFPLNF CHRDR=1.7, CHRDTP=0.6, CHSTAT=0.0, DHDADO=0.0, 
+         SAVSI=27.5, SSPN=0.6,  SSPNE=0.5, TYPE=1.0$ 
+CASEID ----- Meteor Mk III Final ----- 
+#DAMP
+TRIM
+SAVE
+NEXT CASE
+
+

@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<system name="NWS">
+
+  <property>systems/NWS/engaged</property>
+
+  <channel name="Nose Wheel Steering">
+
+     <scheduled_gain name="systems/NWS/steer-cmd">
+      <input>fcs/rudder-cmd-norm</input>
+      <table>
+        <independentVar lookup="row">systems/NWS/engaged</independentVar>
+         <tableData>
+            0     -0.1
+            1     -1.0
+         </tableData>
+      </table>
+      <output>fcs/steer-cmd-norm</output>
+     </scheduled_gain>
+
+    <lag_filter name="systems/NWS/steer-cmd-smoothed">
+      <input>systems/NWS/steer-cmd </input>
+      <c1> 100.0 </c1>
+    </lag_filter> 
+
+     <pure_gain name="systems/NWS/steer-pos">
+      <input>systems/NWS/steer-cmd-smoothed</input>
+      <gain> 75 </gain>
+      <clipto>
+        <min> -90 </min>
+        <max>  90 </max>
+      </clipto> 
+      <output>fcs/steer-pos-deg</output>
+     </pure_gain>
+  </channel>
+  <channel name="Side Slip Instrument">
+  
+   <pure_gain name="orientation/a-pilot-y-ft_sec2">
+    <input>accelerations/a-pilot-y-ft_sec2</input>
+     <gain> -1 </gain>
+   </pure_gain>
+   <pure_gain name="orientation/a-pilot-z-ft_sec2">
+    <input>accelerations/a-pilot-z-ft_sec2</input>
+     <gain> -1 </gain>
+   </pure_gain>
+
+  <fcs_function name="orientation/side-slip-rad">
+    <function>
+     <atan2>
+       <property>orientation/a-pilot-y-ft_sec2</property>
+       <property>orientation/a-pilot-z-ft_sec2</property>
+     </atan2>
+    </function>
+   </fcs_function>
+
+   <pure_gain name="orientation/side-slip2-deg">
+    <input>orientation/side-slip-rad</input>
+     <gain> 57.29578 </gain>
+     <clipto>
+      <min> -180 </min>
+      <max>  180 </max>
+    </clipto> 
+   </pure_gain>
+  </channel>
+
+
+</system>

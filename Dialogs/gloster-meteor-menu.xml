@@ -13,6 +13,13 @@
           <script>aircraft.livery.dialog.toggle()</script>
         </binding>
       </item>
+      <item>
+        <label>Engine Control</label>
+        <binding>
+          <command>nasal</command>
+          <script>dialogs.engine_control.open()</script>
+        </binding>
+      </item>
 <!--
       <item>
         <label>Immatriculation</label>

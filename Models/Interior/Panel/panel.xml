@@ -11,6 +11,7 @@
     <!-- Objets transparents -->
   </animation>
 
+
   <!-- Asi -->
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/asi/asi.xml</path>
@@ -20,20 +21,58 @@
       <z-m>  0.060 </z-m>
     </offsets>
   </model>
-
-  <!-- AI -->
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/gearh/ldg-controls.xml</path>
+    <offsets>
+      <x-m>  0.10 </x-m>
+      <y-m> -0.330 </y-m>
+      <z-m>  -0.060 </z-m>
+      <heading-deg>20</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/flaps/flap.xml</path>
+    <offsets>
+      <x-m>  0.09 </x-m>
+      <y-m> -0.250 </y-m>
+      <z-m>  -0.020 </z-m>
+      <heading-deg>0</heading-deg>
+    </offsets>
+  </model>
+    
+        <!-- AI -->
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/ai/ai.xml</path>
     <offsets>
-      <x-m> 0.088 </x-m>
+      <x-m> 0.09 </x-m>
       <y-m> 0.000 </y-m>
-      <z-m> 0.060 </z-m>
+      <z-m> 0.055 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/pedal/pedals.xml</path>
+    <offsets>
+      <x-m> -0.18 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> -0.40 </z-m>
     </offsets>
   </model>
 
-  <!-- Alt -->
+<model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/sight/ggs.xml</path>
+    <offsets>
+      <x-m> 0.125 </x-m>
+      <y-m> 0.000 </y-m>
+      <z-m> 0.150 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Vsi -->
   <model>
-    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/alt/alt.xml</path>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
     <offsets>
       <x-m> 0.088 </x-m>
       <y-m> 0.070 </y-m>
@@ -43,31 +82,243 @@
 
   <!-- Turn -->
   <model>
-    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/turn/turn.xml</path>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/alt/alt.xml</path>
     <offsets>
       <x-m>  0.091 </x-m>
       <y-m> -0.070 </y-m>
       <z-m> -0.010 </z-m>
     </offsets>
   </model>
-
-  <!-- Hdg -->
+  
   <model>
-    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/hdg/hdg.xml</path>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/gear/gear.xml</path>
     <offsets>
-      <x-m>  0.089 </x-m>
-      <y-m>  0.000 </y-m>
-      <z-m> -0.010 </z-m>
+      <x-m>  0.091 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m> -0.040 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/mach/mach.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m> -0.140 </y-m>
+      <z-m> 0.040 </z-m>
+    </offsets>
+  </model>
+  
+  
+    <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/light/dimmer.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m> -0.070 </y-m>
+      <z-m> -0.080 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/light/dimmer2.xml</path>
+    <offsets>
+      <x-m>  0.091 </x-m>
+      <y-m> 0.070 </y-m>
+      <z-m> -0.080 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/sbrk/airbrake.xml</path>
+    <offsets>
+      <x-m>  0.25 </x-m>
+      <y-m> -0.36 </y-m>
+      <z-m> -0.08 </z-m>
+      <roll-deg>-90</roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/throttle/throttle.xml</path>
+    <offsets>
+      <x-m>  0.25 </x-m>
+      <y-m> -0.33 </y-m>
+      <z-m> -0.02 </z-m>
+      <roll-deg>-30</roll-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/radio/radio.xml</path>
+    <offsets>
+      <x-m>  0.40 </x-m>
+      <y-m> -0.31 </y-m>
+      <z-m> -0.15 </z-m>
+      <pitch-deg>-80</pitch-deg>
+      <heading-deg>-5</heading-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/misc/triple.xml</path>
+    <offsets>
+      <x-m>  0.40 </x-m>
+      <y-m> -0.34 </y-m>
+      <z-m> -0.01 </z-m>
+      <heading-deg>90</heading-deg>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/trim/trim-wheel-elev.xml</path>
+    <offsets>
+      <x-m>  0.25 </x-m>
+      <y-m> -0.23 </y-m>
+      <z-m> -0.25 </z-m>
+      <roll-deg>0</roll-deg>
     </offsets>
   </model>
 
-  <!-- Vsi -->
+  <!-- Hdg -->
   <model>
-    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/vsi/vsi.xml</path>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/compass/compass.xml</path>
+    <offsets>
+      <x-m>  0.09 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m> -0.030 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/oilp/oil-pressure-p.xml</path>
+    <offsets>
+      <x-m>  0.10 </x-m>
+      <y-m>  -0.060 </y-m>
+      <z-m> -0.180 </z-m>
+      <pitch-deg>-40</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/oilp/oil-pressure-s.xml</path>
+    <offsets>
+      <x-m>  0.10 </x-m>
+      <y-m>  0.060 </y-m>
+      <z-m> -0.175 </z-m>
+      <pitch-deg>-40</pitch-deg>
+    </offsets>
+  </model>
+  
+    <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/oilt/oil-temp-p.xml</path>
+    <offsets>
+      <x-m>  0.098 </x-m>
+      <y-m>  -0.025 </y-m>
+      <z-m> -0.167 </z-m>
+      <pitch-deg>-37</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/oilt/oil-temp-s.xml</path>
+    <offsets>
+      <x-m>  0.098 </x-m>
+      <y-m>  0.025 </y-m>
+      <z-m> -0.167 </z-m>
+      <pitch-deg>-37</pitch-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/amps/ammeter.xml</path>
+    <offsets>
+      <x-m>  0.12 </x-m>
+      <y-m>  -0.025 </y-m>
+      <z-m> -0.202 </z-m>
+      <pitch-deg>-37</pitch-deg>
+    </offsets>
+  </model>
+
+  <!-- Turn -->
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/turn/turn.xml</path>
     <offsets>
       <x-m>  0.089 </x-m>
       <y-m>  0.070 </y-m>
       <z-m> -0.010 </z-m>
+    </offsets>
+  </model>
+  
+   <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/rpm/rpm.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.135 </y-m>
+      <z-m> 0.02</z-m>
+    </offsets>
+  </model>
+  
+<model>
+<path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/egt/egt.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.135 </y-m>
+      <z-m> -0.05</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/oat/air-temp.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.21 </y-m>
+      <z-m> -0.05</z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/misc/panel1.xml</path>
+    <offsets>
+      <x-m>  0.29 </x-m>
+      <y-m>  0.35 </y-m>
+      <z-m> -0.07</z-m>
+      <heading-deg>-90</heading-deg>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/rpm/rpm2.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.21 </y-m>
+      <z-m>  0.02 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/clock/clock.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.280 </y-m>
+      <z-m>  -0.05 </z-m>
+    </offsets>
+  </model>
+  
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/misc/ox-pressure.xml</path>
+    <offsets>
+      <x-m>  0.092 </x-m>
+      <y-m>  0.280 </y-m>
+      <z-m>  -0.11 </z-m>
+    </offsets>
+  </model>
+  
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/misc/gun-switch.xml</path>
+    <offsets>
+      <x-m> 0.090 </x-m>
+      <y-m> -0.07 </y-m>
+      <z-m> 0.15 </z-m>
     </offsets>
   </model>
 

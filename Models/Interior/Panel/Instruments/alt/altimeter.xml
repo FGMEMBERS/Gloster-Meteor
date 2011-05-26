@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+
+<!-- altimeter -->
+
+<PropertyList>
+
+	<path>altimeter.ac</path>
+
+	<!-- altimeter -->
+	<animation>
+		<type>rotate</type>
+		<object-name>alt-Needle1</object-name>
+		<property>instrumentation/altimeter/indicated-altitude-ft[1]</property>
+		<factor>0.36</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>alt-Needle2</object-name>
+		<property>instrumentation/altimeter/indicated-altitude-ft[1]</property>
+		<factor>0.036</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>rotate</type>
+		<object-name>alt-Needle3</object-name>
+		<property>/instrumentation/altimeter/indicated-altitude-ft[1]</property>
+		<factor>0.0036</factor>
+		<center>
+			<x-m>0</x-m>
+			<y-m>0</y-m>
+			<z-m>0</z-m>
+		</center>
+		<axis>
+			<x>-1</x>
+			<y>0</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<!-- Pressure Digits -->
+	<animation>
+		<type>textranslate</type>
+		<object-name>inHG1</object-name>
+		<property>instrumentation/altimeter/setting-inhg</property>
+		<factor>0.01</factor>
+		<step>10</step>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>inHG2</object-name>
+		<property>instrumentation/altimeter/setting-inhg</property>
+		<factor>0.1</factor>
+		<step>1</step>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>inHG3</object-name>
+		<property>instrumentation/altimeter/setting-inhg</property>
+		<factor>1.0</factor>
+		<step>0.1</step>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+	<animation>
+		<type>textranslate</type>
+		<object-name>inHG4</object-name>
+		<property>/instrumentation/altimeter/setting-inhg</property>
+		<factor>10.0</factor>
+		<step>0.01</step>
+		<axis>
+			<x>0</x>
+			<y>1</y>
+			<z>0</z>
+		</axis>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<emission>
+			<factor-prop>/controls/lighting/panel-norm</factor-prop>
+			<red>0.75</red>
+			<green>0.25</green>
+			<blue>0.25</blue>
+		</emission>
+	</animation>
+
+	<!-- *** LoD *** -->
+	<animation>
+		<type>range</type>
+		<min-m>0</min-m>
+		<max-m>5</max-m>
+	</animation>
+</PropertyList>

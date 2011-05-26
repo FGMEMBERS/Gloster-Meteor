@@ -5,7 +5,7 @@
   <fx>
 
     <engine>
-      <name>engine</name>
+      <name>left engine</name>
       <path>Sounds/jet.wav</path>
       <mode>looped</mode>
       <condition>
@@ -24,7 +24,7 @@
      </engine>
 
     <engine>
-      <name>whine</name>
+      <name>left whine</name>
       <path>Sounds/turbojet_fan.wav</path>
       <mode>looped</mode>
       <condition>
@@ -44,7 +44,7 @@
     </engine>
 
     <engine>
-      <name>engine</name>
+      <name>right engine</name>
       <path>Sounds/jet.wav</path>
       <mode>looped</mode>
       <condition>
@@ -63,7 +63,7 @@
     </engine>
 
     <engine>
-      <name>whine</name>
+      <name>right whine</name>
       <path>Sounds/turbojet_fan.wav</path>
       <mode>looped</mode>
       <condition>

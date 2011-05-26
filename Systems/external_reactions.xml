@@ -1,0 +1,120 @@
+<?xml version="1.0"?>
+
+<system name="external_reactions">
+
+<!-- Force magnitude and direction for a vertical-stabilizer -->
+<!--    
+    external_reactions/vertical-stabilizer/x
+    external_reactions/vertical-stabilizer/y
+    external_reactions/vertical-stabilizer/z
+-->
+ <channel name="vertical-stabilizer">
+
+  <fcs_function name="aero/vertical-stab/cForce">
+   <description>Change in aerodyanic Force due to beta</description>
+   <function>
+    <table>
+     <independentVar lookup="row"><property>aero/beta-rad</property></independentVar>
+     <tableData>
+-3.1416 0.5
+-0.28   0.5
+-0.27   1.2
+ 0.0	1.4
+ 0.27   1.2
+ 0.28   0.5
+ 3.1416 0.5
+     </tableData>
+    </table>
+   </function>
+  </fcs_function>
+
+  <fcs_function name="aero/vertical-stab/rudder-deflection">
+   <description>This function adjusts the lift curve to represent rudder deflection</description>
+   <function>
+    <product>
+     <property>fcs/rudder-pos-rad</property>
+     <value>1.0</value>
+    </product>  
+   </function>
+  </fcs_function>
+
+  <fcs_function name="aero/vertical-stab/force">
+   <description>magnitude is: sin(beta+rudder)*K Where K depends on beta and represents the stall condition.</description>
+   <function>
+    <product>
+     <property>aero/qbar-psf</property>
+     <property>metrics/Sv-sqft</property>
+     <sin>
+      <sum>
+       <property>aero/beta-rad</property>
+       <property>aero/vertical-stab/rudder-deflection</property>
+      </sum>
+     </sin>
+     <property>aero/vertical-stab/cForce</property>
+    </product>
+   </function>
+   <output>external_reactions/vertical-stabilizer/magnitude</output>
+  </fcs_function>
+
+  <fcs_function name="aero/vertical-stab/y">
+   <description>The side component of the v-stab force</description>
+   <function>
+    <sin>
+     <sum>
+      <table>
+       <independentVar lookup="row"><property>aero/beta-rad</property></independentVar>
+       <tableData>
+-3.1416 0.5
+-0.28   0.5
+-0.27   1.2
+ 0.0	1.4
+ 0.27   1.2
+ 0.28   0.5
+ 3.1416 0.5
+       </tableData>
+      </table>
+      <property>aero/beta-rad</property>
+     </sum>
+    </sin>
+   </function>
+   <output>external_reactions/vertical-stabilizer/y</output>
+  </fcs_function>
+
+  <fcs_function name="aero/vertical-stab/x">
+   <description>The axial component of the v-stab force</description>
+   <function>
+    <cos>
+     <sum>
+      <table>
+       <independentVar lookup="row"><property>aero/beta-rad</property></independentVar>
+       <tableData>
+-3.1416 0.5
+-0.28   0.5
+-0.27   1.2
+ 0.0	1.4
+ 0.27   1.2
+ 0.28   0.5
+ 3.1416 0.5
+       </tableData>
+      </table>
+      <property>aero/beta-rad</property>
+     </sum>
+    </cos>
+   </function>
+   <output>external_reactions/vertical-stabilizer/x</output>
+  </fcs_function>
+
+ </channel>
+
+</system>
+
+<!--
+
+direction is:
+
+ y = cos(b+beta+rudder)
+ x = sin(b+beta+rudder)
+
+where b is the direction angle in the wind-frame and x,y are the axial and normal components in the body frame.
+-->
+
