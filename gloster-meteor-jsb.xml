@@ -114,10 +114,10 @@ http://www.pprune.org/archive/index.php/t-70987.html
      <y>  0.0 </y>
      <z>  0.50 </z>
    </location>
-   <location name="VRP" unit="IN">
+   <location name="VRP" unit="M">
      <x>0</x>
      <y>0</y>
-     <z>0</z>
+     <z>.1</z>
    </location>
  </metrics>
 
@@ -179,7 +179,7 @@ http://www.pprune.org/archive/index.php/t-70987.html
    <rolling_friction> 0.02 </rolling_friction>
    <spring_coeff unit="LBS/FT">       2000.00 </spring_coeff>
    <damping_coeff unit="LBS/FT/SEC">   500.00 </damping_coeff>
-   <max_steer unit="DEG"> 5.00 </max_steer>
+   <max_steer unit="DEG"> 360 </max_steer>
    <brake_group>NONE</brake_group>
    <retractable>1</retractable>
  </contact>
@@ -459,7 +459,7 @@ http://www.pprune.org/archive/index.php/t-70987.html
    </aerosurface_scale>
 
    <aerosurface_scale name="Right Aileron Control">
-      <input>fcs/roll-trim-sum</input>
+      <input>-fcs/roll-trim-sum</input>
       <range>
         <min> -0.3 </min>
         <max>  0.3 </max>
@@ -501,13 +501,17 @@ http://www.pprune.org/archive/index.php/t-70987.html
       <input>fcs/yaw-trim-cmd-norm</input>
       <input>ap/rudder-cmd</input>
       <clipto>
-        <min> -0.3 </min>
-        <max>  0.3 </max>
+        <min> -1.0 </min>
+        <max>  1.0 </max>
       </clipto>
    </summer>
 
    <aerosurface_scale name="Rudder Control">
       <input>fcs/rudder-command-sum</input>
+      <domain>
+        <min> -1.0 </min>
+        <max>  1.0 </max>
+      </domain>
       <range>
         <min> -0.3 </min>
         <max>  0.3 </max>
@@ -516,7 +520,7 @@ http://www.pprune.org/archive/index.php/t-70987.html
    </aerosurface_scale>
 
    <aerosurface_scale name="rudder normalization">
-      <input>fcs/rudder-pos-rad</input>
+      <input>-fcs/rudder-pos-rad</input>
       <domain>
         <min> -0.3 </min>
         <max>  0.3 </max>
@@ -580,12 +584,13 @@ http://www.pprune.org/archive/index.php/t-70987.html
      </traverse>
      <output>gear/gear-pos-norm</output>
    </kinematic>
-<!-- A function to make FGFS /position/gear-agl-ft function -->
+<!-- A function to make FGFS /position/gear-agl-ft function -default_agl + vrp_z
+-->
   <fcs_function name="position/gear-agl-ft">
     <function>
      <sum>
        <property>position/h-agl-ft</property>
-       <value>-4.8</value>
+       <value>-4.15</value>
      </sum>
     </function>
    </fcs_function>
