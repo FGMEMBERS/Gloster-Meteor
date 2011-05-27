@@ -4,19 +4,12 @@
 
   <path>compass.ac</path>
 
-   <animation>
-  <type>scale</type>
-  <x-offset>0.85</x-offset>
-  <y-offset>0.85</y-offset>
-  <z-offset>0.85</z-offset>
- </animation>
-
   <animation>
     <object-name>fond</object-name>
     <object-name>face</object-name>
     <object-name>Compass</object-name>
     <object-name>box</object-name>
-    <object-name>cylinder</object-name>
+    <object-name>knob</object-name>
 
     <object-name>vitre</object-name>
   </animation>
@@ -50,9 +43,9 @@
     <object-name>Compass</object-name>
     <property>instrumentation/magnetic-compass/indicated-heading-deg</property>
     <center> 
-      <x-m> -0.040 </x-m>
+      <x-m> -0.034 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.012 </z-m>
+      <z-m>  0.010 </z-m>
     </center>
     <axis> 
       <x> 0 </x>

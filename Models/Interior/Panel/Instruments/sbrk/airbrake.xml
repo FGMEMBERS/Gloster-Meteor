@@ -1,50 +1,46 @@
-<?xml version="1.0"?>
-
-<!-- airbrake lever -->
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
 	<path>seahawk-airbrake.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>lever</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>lever</object-name>
+    <emission>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.75 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
 
 	<animation>
 		<type>rotate</type>
 		<object-name>lever</object-name>
 		<property>/controls/flight/speedbrake-lever</property>
 		<interpolation>
-			<entry>
-				<ind>0</ind>
-				<dep>-45</dep>
-			</entry>
-			<entry>
-				<ind>0.5</ind>
-				<dep>0</dep>
-			</entry>
-			<entry>
-				<ind>1</ind>
-				<dep>45</dep>
-			</entry>
+			<entry><ind> 0.0 </ind><dep> -45 </dep></entry>
+			<entry><ind> 0.5 </ind><dep>   0 </dep></entry>
+			<entry><ind> 1.0 </ind><dep>  45 </dep></entry>
 		</interpolation>
 		<center>
-			<x-m>-0.01</x-m>
-			<y-m>0</y-m>
-			<z-m>0</z-m>
+			<x-m> -0.01 </x-m>
+			<y-m>  0.00 </y-m>
+			<z-m>  0.00 </z-m>
 		</center>
 		<axis>
-			<x>0</x>
-			<y>1</y>
-			<z>0</z>
+			<x> 0 </x>
+			<y> 1 </y>
+			<z> 0 </z>
 		</axis>
-	</animation>
-
-	<!-- Panel Lighting -->
-	<animation>
-		<type>material</type>
-		<emission>
-			<factor-prop>/controls/lighting/panel-norm</factor-prop>
-			<red>0.75</red>
-			<green>0.25</green>
-			<blue>0.25</blue>
-		</emission>
 	</animation>
 
 	<!-- *** LoD *** -->

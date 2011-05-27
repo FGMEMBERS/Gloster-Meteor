@@ -1,14 +1,33 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
 
-	<path>ldg-controls.ac</path>
+  <path>ldg-controls.ac</path>
 
-	<animation>
-		<type>rotate</type>
-		<object-name>handle</object-name>
-		<property>gear/gear[0]/position-norm</property>
-		<interpolation>
+  <animation>
+    <object-name>mount</object-name>
+    <object-name>override</object-name>
+    <object-name>switch</object-name>
+    <object-name>lamp-on</object-name>
+    <object-name>lamp-of</object-name>
+    <object-name>handle</object-name>
+  </animation>
+
+  <animation>
+		<name>ldg-controls</name>
+    <object-name>mount</object-name>
+    <object-name>override</object-name>
+    <object-name>switch</object-name>
+    <object-name>lamp-on</object-name>
+    <object-name>lamp-of</object-name>
+    <object-name>handle</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>handle</object-name>
+    <property>gear/gear[0]/position-norm</property>
+    <interpolation>
 			<entry><ind>1</ind><dep>-36</dep></entry>
 			<entry><ind>0</ind><dep>36</dep></entry> 
 		</interpolation>  
@@ -44,7 +63,6 @@
 			<z>0</z>
 		</axis>
 	</animation>
-    
 -->
 
 	<animation>
@@ -78,10 +96,7 @@
 		</condition>  
 	</animation>
 
-
-
 	<!-- lighting -->
-
 	<animation> 
 		<object-name>mount</object-name>
 		<type>material</type>
@@ -130,7 +145,6 @@
 		<type>noshadow</type>
 	</animation>
 
-
 	<animation>
 		<type>range</type>
 		<min-m>0</min-m>
@@ -138,3 +152,4 @@
 	</animation>
 
 </PropertyList>
+

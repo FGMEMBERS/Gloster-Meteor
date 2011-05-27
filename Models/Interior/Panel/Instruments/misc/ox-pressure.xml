@@ -1,69 +1,55 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+
 <PropertyList>
 
  <path>ox-pressure.ac</path>
 
-    <animation>
-        <type>range</type>
-        <min-m>0</min-m>
-        <max-m>7</max-m>
-    </animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
 
-<animation>
-  <type>scale</type>
-  <x-offset>0.70</x-offset>
-  <y-offset>0.70</y-offset>
-  <z-offset>0.70</z-offset>
- </animation>
- 
- <animation>
-  <type>rotate</type>
-  <object-name>Needle</object-name>
-  <property>/fdm/jsbsim/systems/Ox/pressure</property>
-  <interpolation>
-    <entry>
-    <ind>0</ind>
-    <dep>0</dep>
-   </entry>
-   <entry>
-    <ind>500</ind>
-    <dep>180</dep>
-   </entry>
-  </interpolation>
-   <center>
-   <x-m>-0.0</x-m>
-   <y-m>0.0</y-m>
-   <z-m>0.0</z-m>
-  </center>
-  <axis>
-   <x>-1</x>
-   <y>0</y>
-   <z>0</z>
-  </axis>
- </animation>
+    <object-name>vitre</object-name>
+  </animation>
 
- <animation>
-  <type>material</type>
-  <object-name>Face</object-name>
-  <object-name>Needle</object-name>
-  <emission>
-    <factor-prop>/controls/lighting/instruments-norm</factor-prop>
-    <red>0.35</red>
-    <green>0.35</green>
-    <blue>0.4</blue>
-  </emission>
- </animation>
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
 
- <animation>
-  <type>material</type>
-  <object-name>bezeloutside</object-name>
-  <object-name>bezelBase</object-name>
-  <emission>
-    <factor-prop>/controls/lighting/cabin-norm</factor-prop>
-    <red>0.2</red>
-    <green>0.1</green>
-    <blue>0.1</blue>
-  </emission>
- </animation>
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.75 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+   <type>rotate</type>
+   <object-name>needle</object-name>
+   <property>/fdm/jsbsim/systems/Ox/pressure</property>
+   <interpolation>
+     <entry><ind>   0 </ind><dep>   0 </dep></entry>
+     <entry><ind> 500 </ind><dep> 180 </dep></entry>
+   </interpolation>
+   <axis>
+     <x> -1 </x>
+     <y>  0 </y>
+     <z>  0 </z>
+   </axis>
+  </animation>
 
 </PropertyList>
+

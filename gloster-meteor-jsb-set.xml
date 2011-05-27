@@ -9,46 +9,6 @@
 
     <status>beta</status>
 
-    <hud>
-      <path n="1">Aircraft/Gloster-Meteor/Systems/meteor-sight.xml</path>
-      <visibility n="1">true</visibility>
-      <font>
-        <size type="float">10.0</size>
-      </font>
-    </hud>
-
-    <aim>
-      <active type="bool">false</active>
-      <tachy type="bool">true</tachy>
-      <align type="bool">false</align>
-      <radius type="float">1</radius>
-      <speed-fps type="float">2755.9</speed-fps>
-      <range-yds type="float">550</range-yds>
-      <arc>
-        <start-deg type="float">10</start-deg>
-        <stop-deg type="float">270</stop-deg>
-      </arc>
-      <offsets>
-        <x type="float">0</x>
-        <y type="float">0</y>
-      </offsets>
-      <compression type ="float">2</compression>
-    </aim>
-
-    <view n="0">
-      <internal archive="y">true</internal>
-      <config>
-        <x-offset-m archive="y">  0.000 </x-offset-m>
-        <!-- Right -->
-        <y-offset-m archive="y">  0.41</y-offset-m>
-        <!-- Up    -->
-        <z-offset-m archive="y"> -3.8 </z-offset-m>
-        <!-- Back  -->
-        <pitch-offset-deg> -10 </pitch-offset-deg>
-      </config>
-    </view>
-
-
   </sim>
 
 </PropertyList>

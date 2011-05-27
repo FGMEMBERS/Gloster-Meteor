@@ -1,24 +1,29 @@
-<?xml version="1.0"?>
-  <PropertyList> 
-    <path>trim-wheel-elev.ac</path>
-    <animation> 
-      <type>rotate</type>
-      <object-name>cylinder</object-name>
-      <property>controls/flight/elevator-trim</property>
-      <factor>1440</factor>
-      <axis> 
-        <x>0</x>
-        <y>-1</y>
-        <z>0</z>
-      </axis>
-    </animation>
-	<animation> 
-      <type>material</type>
-      <emission> 
-        <factor-prop>controls/lighting/panel-norm</factor-prop>
-        <red>0.3</red>
-        <green>0.025</green>
-        <blue>0.025</blue>
-      </emission>
-    </animation>
-  </PropertyList>
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList> 
+
+  <path>trim-wheel-elev.ac</path>
+
+  <animation> 
+    <type>rotate</type>
+    <object-name>cylinder</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>1440</factor>
+    <axis> 
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+
+  <animation> 
+    <type>material</type>
+    <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.300 </red>
+      <green> 0.025 </green>
+      <blue>  0.025 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

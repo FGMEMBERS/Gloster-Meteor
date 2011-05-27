@@ -1,62 +1,39 @@
-<?xml version="1.0"?>
-<!--
-sweat by maggse
-    -->
+<?xml version="1.0" encoding="UTF-8"?>
+
 <PropertyList>
 
- <path>fuelvalves.ac</path>
+  <path>fuelvalves.ac</path>
  
-<animation>
-	<type>material</type>
-	<object-name>switch_1</object-name>
-	<object-name>switch_3</object-name>
-	<object-name>switch_wgl</object-name>
-	<object-name>switch_wgr</object-name>
-	<object-name>switch_2</object-name>
-	<object-name>switch_4</object-name>
-	<object-name>switch_lmain</object-name>
-	<object-name>switch_rmain</object-name>
-	<object-name>fuel_valves</object-name>
-	<emission>
-		<red>0.6</red>
-		<green>0.4</green>
-		<blue>0.3</blue>
-		<factor-prop>controls/lighting/instruments-norm</factor-prop>
-	</emission>
-</animation>
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>fondswitch</object-name>
+    <object-name>switch_1</object-name>
+    <object-name>switch_3</object-name>
+    <object-name>switch_wgl</object-name>
+    <object-name>switch_wgr</object-name>
+    <object-name>switch_2</object-name>
+    <object-name>switch_4</object-name>
+    <object-name>switch_lmain</object-name>
+    <object-name>switch_rmain</object-name>
+  </animation>
 
-
-<!--
-<animation>
-	<type>pick</type>
-	<object-name>ALT.minus</object-name>
-	<action>
-		<button>0</button>
-		<repeatable>true</repeatable>
-		<interval-sec>0.1</interval-sec>
-		<binding>
-			<command>property-adjust</command>
-			<property>/instrumentation/altimeter/setting-inhg</property>
-			<step>-0.01</step>
-			<min>26.0</min>
-			<max>33.0</max>
-			<wrap>false</wrap>
-		</binding>
-	</action>
-	<action>
-		<button>1</button>
-		<repeatable>true</repeatable>
-		<interval-sec>0.1</interval-sec>
-		<binding>
-			<command>property-adjust</command>
-			<property>/instrumentation/altimeter/setting-inhg</property>
-			<step>-0.1</step>
-			<min>26.0</min>
-			<max>33.0</max>
-			<wrap>false</wrap>
-		</binding>
-	</action>
-</animation>
- -->
+  <animation>
+    <type>material</type>
+    <object-name>fondswitch</object-name>
+    <object-name>switch_1</object-name>
+    <object-name>switch_3</object-name>
+    <object-name>switch_wgl</object-name>
+    <object-name>switch_wgr</object-name>
+    <object-name>switch_2</object-name>
+    <object-name>switch_4</object-name>
+    <object-name>switch_lmain</object-name>
+    <object-name>switch_rmain</object-name>
+    <emission>
+      <red>   0.6 </red>
+      <green> 0.4 </green>
+      <blue>  0.3 </blue>
+      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+    </emission>
+  </animation>
 
 </PropertyList>

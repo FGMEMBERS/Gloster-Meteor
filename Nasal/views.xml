@@ -2,7 +2,7 @@
 
 <PropertyList>
 
-  <chase-distance-m type="double" archive="y">-30.0</chase-distance-m>
+  <chase-distance-m type="double" archive="y"> -30 </chase-distance-m>
 
   <view n="100">
     <name>Tail Camera View</name>
@@ -12,21 +12,22 @@
       <from-model type="bool">true</from-model>
       <from-model-idx type="int">0</from-model-idx>
       <ground-level-nearplane-m type="double">0.01f</ground-level-nearplane-m>
-      <default-field-of-view-deg type="double">30</default-field-of-view-deg>
-      <pitch-offset-deg>-5</pitch-offset-deg>
       <x-offset-m archive="y"> 0.000 </x-offset-m> <!--Right-->
       <y-offset-m archive="y"> 2.000 </y-offset-m> <!--Up-->
       <z-offset-m archive="y"> 9.227 </z-offset-m> <!--Back-->
+      <pitch-offset-deg> -5 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 30 </default-field-of-view-deg>
     </config>
   </view>
 
   <view n="0">
     <internal archive="y">true</internal>
     <config>
-      <x-offset-m archive="y">  0.000 </x-offset-m> <!-- Right -->
-      <y-offset-m archive="y">  0.516 </y-offset-m> <!-- Up    -->
-      <z-offset-m archive="y"> -3.808 </z-offset-m> <!-- Back  -->
-      <pitch-offset-deg> -10 </pitch-offset-deg>
+      <x-offset-m archive="y">  0.000 </x-offset-m> <!--        Right -->
+      <y-offset-m archive="y">  0.410 </y-offset-m> <!--  0.516 Up    -->
+      <z-offset-m archive="y"> -3.800 </z-offset-m> <!-- -3.808 Back  -->
+      <pitch-offset-deg> -15 </pitch-offset-deg>
+      <default-field-of-view-deg type="double"> 70 </default-field-of-view-deg>
     </config>
   </view>
 

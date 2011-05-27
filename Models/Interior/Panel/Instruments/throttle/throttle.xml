@@ -1,36 +1,61 @@
-<?xml version="1.0"?>
-
+<?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
+
 	<path>throttle.ac</path>
 
-<animation>
-  <type>scale</type>
-  <x-offset>0.60</x-offset>
-  <y-offset>0.30</y-offset>
-  <z-offset>0.30</z-offset>
- </animation>
+  <animation>
+    <object-name>mount</object-name>
+    <object-name>stick</object-name>
+    <object-name>spacer</object-name>
+    <object-name>throttle-L</object-name>
+    <object-name>throttle-R</object-name>
+  </animation>
+
+	<!-- lighting -->
+	<animation>
+		<type>material</type>
+		<object-name>throttle-L</object-name>
+		<object-name>throttle-R</object-name>
+		<emission> 
+			<factor-prop>controls/lighting/panel-norm</factor-prop>
+			<red>   0.275 </red>
+			<green> 0.120 </green>
+			<blue>  0.050 </blue>
+		</emission>
+	</animation>
+
+	<animation>
+		<type>material</type>
+		<object-name>mount</object-name>
+		<emission> 
+			<factor-prop>controls/lighting/panel-norm</factor-prop>
+			<red>   0.55 </red>
+			<green> 0.24 </green>
+			<blue>  0.10 </blue>
+		</emission>
+	</animation>
 
 	<!-- Throttle Right -->
 	<animation> 
-		<object-name>throttle-L</object-name>
-		<type>rotate</type>
-		<property>controls/engines/engine[0]/throttle</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>-5</dep></entry>
-			<entry><ind>0.076</ind><dep>0</dep></entry>
-			<entry><ind>0.8</ind><dep>23.2</dep></entry>
-			<entry><ind>1</ind><dep>47</dep></entry>
+    <object-name>throttle-L</object-name>
+    <type>rotate</type>
+    <property>controls/engines/engine[0]/throttle</property>
+    <interpolation>
+      <entry><ind> 0.000 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 0.076 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.800 </ind><dep> 23.2 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> 47.0 </dep></entry>
 		</interpolation>
 		<center>
-			<x-m>0.0027</x-m>
-			<y-m>0.0000</y-m>
-			<z-m>-0.1478</z-m>
+			<x-m> 0.0027 </x-m>
+			<y-m> 0.0000 </y-m>
+			<z-m>-0.1478 </z-m>
 		</center>
 		<axis> 
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
+			<x>  0 </x>
+			<y> -1 </y>
+			<z>  0 </z>
 		</axis>
 	</animation>
 
@@ -40,137 +65,22 @@
 		<type>rotate</type>
 		<property>controls/engines/engine[1]/throttle</property>
 		<interpolation>
-			<entry><ind>0</ind><dep>-5</dep></entry>
-			<entry><ind>0.076</ind><dep>0</dep></entry>
-			<entry><ind>0.8</ind><dep>23.2</dep></entry>
-			<entry><ind>1</ind><dep>47</dep></entry>
+      <entry><ind> 0.000 </ind><dep> -5.0 </dep></entry>
+      <entry><ind> 0.076 </ind><dep>  0.0 </dep></entry>
+      <entry><ind> 0.800 </ind><dep> 23.2 </dep></entry>
+      <entry><ind> 1.000 </ind><dep> 47.0 </dep></entry>
 		</interpolation>
 		<center>
-			<x-m>0.0027</x-m>
-			<y-m>0.0000</y-m>
-			<z-m>-0.1478</z-m>
+			<x-m>  0.0027 </x-m>
+			<y-m>  0.0000 </y-m>
+			<z-m> -0.1478 </z-m>
 		</center>
 		<axis> 
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
+			<x>  0 </x>
+			<y> -1 </y>
+			<z>  0 </z>
 		</axis>
 	</animation>
-
-	<!-- Wing Sweep -->
-	<animation> 
-		<object-name>wing-sweep-handle</object-name>
-		<type>rotate</type>
-		<property>surface-positions/wing-pos-norm</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-54.6</dep></entry>
-		</interpolation>
-		<center>
-			<x-m>0.0027</x-m>
-			<y-m>0.0000</y-m>
-			<z-m>-0.1914</z-m>
-		</center>
-		<axis> 
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>controls/flight/flapscommand
-
-	<!-- Flap Lever -->
-	<animation> 
-		<object-name>flap-handle</object-name>
-		<type>rotate</type>
-		<property>controls/flight/flapscommand</property>
-		<interpolation>
-			<entry><ind>0</ind><dep>0</dep></entry>
-			<entry><ind>1</ind><dep>-22</dep></entry>
-		</interpolation>
-		<center>
-			<x-m>0.0027</x-m>
-			<y-m>0.0000</y-m>
-			<z-m>-0.1914</z-m>
-		</center>
-		<axis> 
-			<x>0</x>
-			<y>-1</y>
-			<z>0</z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>shader</type>
-		<shader>chrome</shader>
-		<texture>Aircraft/f-14b/Models/Cockpit/glass_shader_y.png</texture>
-		<object-name>sweep-cover-transparent</object-name>
-	</animation>
-
-
-	<!-- lighting -->
-	<animation>
-		<object-name>throttle-L</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.275</red>
-			<green>0.12</green>
-			<blue>0.05</blue>
-		</emission>
-	</animation>
-	<animation>
-		<object-name>throttle-R</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.275</red>
-			<green>0.12</green>
-			<blue>0.05</blue>
-		</emission>
-	</animation>
-	<animation>
-		<object-name>flap-handle</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.275</red>
-			<green>0.12</green>
-			<blue>0.05</blue>
-		</emission>
-	</animation>
-	<animation>
-		<object-name>wing-sweep-handle</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.275</red>
-			<green>0.12</green>
-			<blue>0.05</blue>
-		</emission>
-	</animation>
-	<animation>
-		<object-name>sweep-cover-solid</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.275</red>
-			<green>0.12</green>
-			<blue>0.05</blue>
-		</emission>
-	</animation>
-	<animation>
-		<object-name>mount</object-name>
-		<type>material</type>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>0.55</red>
-			<green>0.24</green>
-			<blue>0.10</blue>
-		</emission>
-	</animation>
-
-
-
 
 	<animation>
 		<type>range</type>
@@ -179,3 +89,4 @@
 	</animation>
 
 </PropertyList>
+

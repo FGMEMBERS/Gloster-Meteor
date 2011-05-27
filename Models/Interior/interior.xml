@@ -7,6 +7,10 @@
   <animation>
     <!-- Objets opaques -->
     <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
+    <object-name>left</object-name>
+    <object-name>right</object-name>
+    <object-name>center</object-name>
     <object-name>inttour</object-name>
     <object-name>inttourvitres</object-name>
     <object-name>inttourverriere</object-name>
@@ -23,22 +27,21 @@
   </animation>
 
   <!-- Pilote -->
-<!--  <model>
+  <model>
     <path>Aircraft/Gloster-Meteor/Models/Pilot/pilot.xml</path>
     <offsets>
-      <x-m> -3.90 </x-m>
+      <x-m> -3.620 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.03 </z-m>
+      <z-m>  0.000 </z-m>
     </offsets>
   </model>
--->  
     
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/seat/seat.xml</path>
     <offsets>
-      <x-m> -3.70 </x-m>
-      <y-m> -0.00 </y-m>
-      <z-m>  -0.10 </z-m>
+      <x-m> -3.700 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.100 </z-m>
     </offsets>
   </model>
 
@@ -46,9 +49,9 @@
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/panel.xml</path>
     <offsets>
-      <x-m> -4.36 </x-m>
+      <x-m> -4.360 </x-m>
       <y-m>  0.000 </y-m>
-      <z-m>  0.17 </z-m>
+      <z-m>  0.170 </z-m>
     </offsets>
   </model>
 

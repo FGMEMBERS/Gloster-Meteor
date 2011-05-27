@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- 703 Naval Air Squadron, Royal Navy -->
+
+<PropertyList>
+
+  <sim>
+    <model>
+      <livery>
+        <name type="string">Royal Navy - EE337</name>
+        <texture>Liveries/EE337.png</texture>
+<!--
+        <diffuse>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </diffuse>
+
+        <ambient>
+          <red>   0.5 </red>
+          <green> 0.5 </green>
+          <blue>  0.5 </blue>
+        </ambient>
+-->
+        <specular>
+          <red>   0.05 </red>
+          <green> 0.05 </green>
+          <blue>  0.05 </blue>
+        </specular>
+
+        <emission>
+          <red>   0.1 </red>
+          <green> 0.1 </green>
+          <blue>  0.1 </blue>
+        </emission>
+<!--
+        <transparency>
+          <alpha> 0.0 </alpha>
+        </transparency>
+
+        <shininess>10</shininess>
+-->
+      </livery>
+    </model>
+  </sim>
+
+</PropertyList>
