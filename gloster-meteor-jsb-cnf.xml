@@ -18,23 +18,22 @@
     </hud>
 
     <aim>
-      <active type="bool">false</active>
-      <tachy type="bool">true</tachy>
-      <align type="bool">false</align>
-      <radius type="float">1</radius>
-      <speed-fps type="float">2755.9</speed-fps>
-      <range-yds type="float">550</range-yds>
+      <active type="bool"> false </active>
+      <tachy  type="bool">  true </tachy>
+      <align  type="bool"> false </align>
+      <radius type="float"> 1 </radius>
+      <speed-fps type="float"> 2755.9 </speed-fps>
+      <range-yds type="float">  550.0 </range-yds>
       <arc>
-        <start-deg type="float">10</start-deg>
-        <stop-deg type="float">270</stop-deg>
+        <start-deg type="float">  10 </start-deg>
+        <stop-deg  type="float"> 270 </stop-deg>
       </arc>
       <offsets>
-        <x type="float">0</x>
-        <y type="float">0</y>
+        <x type="float"> 0 </x>
+        <y type="float"> 0 </y>
       </offsets>
-      <compression type ="float">2</compression>
+      <compression type ="float"> 2 </compression>
     </aim>
-
 
   </sim>
 

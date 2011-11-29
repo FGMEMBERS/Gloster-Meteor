@@ -200,9 +200,6 @@
       <x-m>  0.480 </x-m>
       <y-m> -2.356 </y-m>
       <z-m> -0.654 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -212,9 +209,6 @@
       <x-m>  0.480 </x-m>
       <y-m> -2.356 </y-m>
       <z-m> -0.654 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -224,9 +218,6 @@
       <x-m> -1.273 </x-m>
       <y-m> -6.481 </y-m>
       <z-m> -0.348 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -237,9 +228,6 @@
       <x-m>  0.480 </x-m>
       <y-m>  2.356 </y-m>
       <z-m> -0.654 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -249,9 +237,6 @@
       <x-m>  0.480 </x-m>
       <y-m>  2.356 </y-m>
       <z-m> -0.654 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -261,9 +246,6 @@
       <x-m> -1.273 </x-m>
       <y-m>  6.481 </y-m>
       <z-m> -0.348 </z-m>
-      <roll-deg>    0 </roll-deg>
-      <pitch-deg>   0 </pitch-deg>
-      <heading-deg> 0 </heading-deg>
     </offsets>
   </model>
 
@@ -361,18 +343,17 @@
 
   <!-- Une ombre pour OSG -->
   <model>
-    <name>shadowOSG</name>
     <path>Aircraft/Gloster-Meteor/Models/shadow.xml</path>
+    <offsets>
+      <x-m>  0.03176 </x-m>
+      <y-m>  0.00000 </y-m>
+      <z-m> -1.70000 </z-m>
+    </offsets>
   </model>
 
   <!-- Interieur -->
   <model>
     <path>Aircraft/Gloster-Meteor/Models/Interior/interior.xml</path>
-    <offsets>
-      <x-m> 0 </x-m>
-      <y-m> 0 </y-m>
-      <z-m> 0 </z-m>
-    </offsets>
   </model>
 
   <animation>
@@ -544,8 +525,8 @@
     <object-name>porteA</object-name>
     <property>gear/gear[0]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>   0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> 105 </dep></entry>
+      <entry><ind> 0 </ind><dep>   0 </dep></entry>
+      <entry><ind> 1 </ind><dep> 105 </dep></entry>
     </interpolation>
     <center>
       <x-m> -5.894 </x-m>
@@ -602,8 +583,8 @@
     <object-name>porteG1</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -100 </dep></entry>
+      <entry><ind> 0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -100 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -2.043 </x1-m>
@@ -640,8 +621,8 @@
     <object-name>porteD1</object-name>
     <property>gear/gear[1]/position-norm</property>
     <interpolation>
-      <entry><ind> 0.0 </ind><dep>    0 </dep></entry>
-      <entry><ind> 1.0 </ind><dep> -100 </dep></entry>
+      <entry><ind> 0 </ind><dep>    0 </dep></entry>
+      <entry><ind> 1 </ind><dep> -100 </dep></entry>
     </interpolation>
     <axis>
       <x1-m> -1.768 </x1-m>
