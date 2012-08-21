@@ -29,10 +29,10 @@
     <object-name>switch_lmain</object-name>
     <object-name>switch_rmain</object-name>
     <emission>
-      <red>   0.6 </red>
-      <green> 0.4 </green>
-      <blue>  0.3 </blue>
-      <factor-prop>controls/lighting/instruments-norm</factor-prop>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>
 

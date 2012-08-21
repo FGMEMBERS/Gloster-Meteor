@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList include="gloster-meteor-base.xml">
+
+  <sim>
+
+    <description>Gloster Meteor (YASim)</description>
+    <flight-model>yasim</flight-model>
+    <aero>gloster-meteor-yasim</aero>
+
+    <author>Emmanuel BARANGER (3D/FDM)</author>
+    <status>alpha</status>
+    <fuel-fraction>1.0</fuel-fraction>
+  
+  </sim>
+
+  <yasim>
+    <gloster-meteor>
+      <pilot-lb>128</pilot-lb>
+    </gloster-meteor>
+  </yasim>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">2070</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+</PropertyList>
+

@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList> 
 
-  <path>ggs-mod1.ac</path>
+  <path>ggs.ac</path>
     
   <animation>
     <!-- Objets opaques -->
@@ -21,13 +21,15 @@
     <name>vitre</name>
   </animation>
 
-	<animation> 
+  <animation> 
     <type>material</type>
-    <emission> 
-      <factor-prop>/controls/lighting/panel-norm</factor-prop>
-      <red>   0.40 </red>
-      <green> 0.20 </green>
-      <blue>  0.20 </blue>
+    <object-name>ggs</object-name>
+    <object-name>knob</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
     </emission>
   </animation>  
 

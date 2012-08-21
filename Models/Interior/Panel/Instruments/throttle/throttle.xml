@@ -1,8 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-	<path>throttle.ac</path>
+  <path>throttle.ac</path>
 
   <animation>
     <object-name>mount</object-name>
@@ -12,32 +12,32 @@
     <object-name>throttle-R</object-name>
   </animation>
 
-	<!-- lighting -->
-	<animation>
-		<type>material</type>
-		<object-name>throttle-L</object-name>
-		<object-name>throttle-R</object-name>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>   0.275 </red>
-			<green> 0.120 </green>
-			<blue>  0.050 </blue>
-		</emission>
-	</animation>
+  <!-- lighting -->
+  <animation>
+    <type>material</type>
+    <object-name>throttle-L</object-name>
+    <object-name>throttle-R</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
 
-	<animation>
-		<type>material</type>
-		<object-name>mount</object-name>
-		<emission> 
-			<factor-prop>controls/lighting/panel-norm</factor-prop>
-			<red>   0.55 </red>
-			<green> 0.24 </green>
-			<blue>  0.10 </blue>
-		</emission>
-	</animation>
+  <animation>
+    <type>material</type>
+    <object-name>mount</object-name>
+    <emission> 
+      <factor-prop>controls/lighting/panel-norm</factor-prop>
+      <red>   0.55 </red>
+      <green> 0.24 </green>
+      <blue>  0.10 </blue>
+    </emission>
+  </animation>
 
-	<!-- Throttle Right -->
-	<animation> 
+  <!-- Throttle Right -->
+  <animation> 
     <object-name>throttle-L</object-name>
     <type>rotate</type>
     <property>controls/engines/engine[0]/throttle</property>
@@ -46,47 +46,41 @@
       <entry><ind> 0.076 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 0.800 </ind><dep> 23.2 </dep></entry>
       <entry><ind> 1.000 </ind><dep> 47.0 </dep></entry>
-		</interpolation>
-		<center>
-			<x-m> 0.0027 </x-m>
-			<y-m> 0.0000 </y-m>
-			<z-m>-0.1478 </z-m>
-		</center>
-		<axis> 
-			<x>  0 </x>
-			<y> -1 </y>
-			<z>  0 </z>
-		</axis>
-	</animation>
+    </interpolation>
+    <center>
+      <x-m>  0.0027 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.1478 </z-m>
+    </center>
+    <axis> 
+      <x>  0 </x>
+      <y> -1 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
 
-	<!-- Throttle Right -->
-	<animation> 
-		<object-name>throttle-R</object-name>
-		<type>rotate</type>
-		<property>controls/engines/engine[1]/throttle</property>
-		<interpolation>
+  <!-- Throttle Right -->
+  <animation> 
+    <object-name>throttle-R</object-name>
+    <type>rotate</type>
+    <property>controls/engines/engine[1]/throttle</property>
+    <interpolation>
       <entry><ind> 0.000 </ind><dep> -5.0 </dep></entry>
       <entry><ind> 0.076 </ind><dep>  0.0 </dep></entry>
       <entry><ind> 0.800 </ind><dep> 23.2 </dep></entry>
       <entry><ind> 1.000 </ind><dep> 47.0 </dep></entry>
-		</interpolation>
-		<center>
-			<x-m>  0.0027 </x-m>
-			<y-m>  0.0000 </y-m>
-			<z-m> -0.1478 </z-m>
-		</center>
-		<axis> 
-			<x>  0 </x>
-			<y> -1 </y>
-			<z>  0 </z>
-		</axis>
-	</animation>
-
-	<animation>
-		<type>range</type>
-		<min-m>0</min-m>
-		<max-m>5</max-m>
-	</animation>
+    </interpolation>
+    <center>
+      <x-m>  0.0027 </x-m>
+      <y-m>  0.0000 </y-m>
+      <z-m> -0.1478 </z-m>
+     </center>
+     <axis> 
+       <x>  0 </x>
+       <y> -1 </y>
+       <z>  0 </z>
+     </axis>
+  </animation>
 
 </PropertyList>
 

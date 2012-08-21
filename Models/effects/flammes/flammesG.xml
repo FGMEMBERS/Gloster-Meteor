@@ -1,16 +1,8 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
   <path>flammes.ac</path>
-  <offsets>
-    <x-m> 0.0 </x-m>
-    <y-m> 0.0 </y-m>
-    <z-m> 0.0 </z-m>
-    <roll-deg>    0.000 </roll-deg>
-    <pitch-deg>   0.000 </pitch-deg>
-    <heading-deg> 0.000 </heading-deg>
-  </offsets>
 
   <animation>
     <!-- Objets transparents -->
@@ -36,15 +28,10 @@
     <object-name>flamme3</object-name>
     <property>controls/engines/engine[0]/throttle</property>
     <factor> 100 </factor>
-    <center>
-      <x-m> 0.000 </x-m>
-      <y-m> 0.000 </y-m>
-      <z-m> 0.000 </z-m>
-    </center>
     <axis>
-      <x> 1.000 </x>
-      <y> 0.000 </y>
-      <z> 0.000 </z>
+      <x> 1 </x>
+      <y> 0 </y>
+      <z> 0 </z>
     </axis>
   </animation>
 

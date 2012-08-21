@@ -1,9 +1,29 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="ISO-8859-1"?>
 
 <PropertyList>
 
-  <path>pedals.ac</path>
-
+  <!-- Left pedal -->
+  <model>
+    <name>LeftPedal</name>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/pedal/pedal.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m> -0.160 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+  
+  <!-- Right pedal -->
+  <model>
+    <name>RightPedal</name>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/pedal/pedal.xml</path>
+    <offsets>
+      <x-m> -0.006 </x-m>
+      <y-m>  0.160 </y-m>
+      <z-m>  0.005 </z-m>
+    </offsets>
+  </model>
+  
   <animation>
     <type>rotate</type>
     <object-name>LeftPedal</object-name>
@@ -11,7 +31,7 @@
     <factor>25</factor>
     <center>
       <x-m> -0.012 </x-m>
-      <y-m> -0.000 </y-m>
+      <y-m> -0.160 </y-m>
       <z-m> -0.100 </z-m>
     </center>
     <axis>
@@ -25,10 +45,10 @@
     <type>rotate</type>
     <object-name>RightPedal</object-name>
     <property>/controls/flight/rudder</property>
-    <factor>-25</factor>
+    <factor> -25 </factor>
     <center>
       <x-m> -0.012 </x-m>
-      <y-m> -0.000 </y-m>
+      <y-m>  0.160 </y-m>
       <z-m> -0.100 </z-m>
     </center>
     <axis>
@@ -39,5 +59,4 @@
   </animation> 
 
 </PropertyList>
-
 
