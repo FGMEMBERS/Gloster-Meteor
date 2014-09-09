@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList include="gloster-meteor-base.xml">
+
+  <sim>
+
+    <description>Gloster Meteor (JSBSim)</description>
+    <author>Emmanuel BARANGER (3D), Ron Jensen (JSBSim FDM)</author>
+    <flight-model>jsb</flight-model>
+    <aero>gloster-meteor-jsb</aero>
+
+    <hud>
+      <path n="1">Aircraft/gloster-meteor/Systems/meteor-sight.xml</path>
+      <visibility n="1">true</visibility>
+      <font>
+        <size type="float">10.0</size>
+      </font>
+    </hud>
+
+    <aim>
+      <active type="bool"> false </active>
+      <tachy  type="bool">  true </tachy>
+      <align  type="bool"> false </align>
+      <radius type="float"> 1 </radius>
+      <speed-fps type="float"> 2755.9 </speed-fps>
+      <range-yds type="float">  550.0 </range-yds>
+      <arc>
+        <start-deg type="float">  10 </start-deg>
+        <stop-deg  type="float"> 270 </stop-deg>
+      </arc>
+      <offsets>
+        <x type="float"> 0 </x>
+        <y type="float"> 0 </y>
+      </offsets>
+      <compression type ="float"> 2 </compression>
+    </aim>
+
+  </sim>
+
+  <position>
+    <gear-agl-ft alias="/fdm/jsbsim/position/gear-agl-ft"/>
+  </position>
+  <orientation>
+    <side-slip2-deg alias="/fdm/jsbsim/orientation/side-slip2-deg"/>
+  </orientation>
+
+  <engines>
+    <engine n="0">
+      <rpm alias="/fdm/jsbsim/propulsion/engine[0]/rpm"/>
+    </engine>
+    <engine n="1">
+      <rpm alias="/fdm/jsbsim/propulsion/engine[1]/rpm"/>
+    </engine>
+  </engines>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+        <tank-num type="int">0</tank-num>
+        <level-gal_us archive="y">160</level-gal_us>
+      </tank>
+      <tank n="1">
+        <tank-num type="int">1</tank-num>
+        <level-gal_us archive="y">160</level-gal_us>
+      </tank>
+      <tank n="2">
+        <tank-num type="int">2</tank-num>
+        <level-gal_us archive="y">0</level-gal_us>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <fdm>
+    <jsbsim>
+      <payload>
+        <gun>
+          <rounds alias="/ai/submodels/submodel[1]/count"/>
+          <rounds alias="/ai/submodels/submodel[3]/count"/>
+          <rounds alias="/ai/submodels/submodel[5]/count"/>
+          <rounds alias="/ai/submodels/submodel[7]/count"/>
+        </gun>
+      </payload>
+    </jsbsim>
+  </fdm>
+
+<!--
+  <ai>
+    <submodels>
+      <submodel n="1">
+        <count alias="/fdm/jsbsim/payload/gun/rounds-one"/>
+      </submodel>
+      <submodel n="3">
+        <count alias="/fdm/jsbsim/payload/gun/rounds-two"/>
+      </submodel>
+      <submodel n="5">
+        <count alias="/fdm/jsbsim/payload/gun/rounds-three"/>
+      </submodel>
+      <submodel n="7">
+        <count alias="/fdm/jsbsim/payload/gun/rounds-four"/>
+      </submodel>
+    </submodels>
+  </ai>
+-->
+
+</PropertyList>
+

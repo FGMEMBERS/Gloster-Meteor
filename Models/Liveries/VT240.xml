@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<!-- VT240, 263 Sqdn RAF, 1950  -->
+<PropertyList>
+
+  <sim>
+
+    <model>
+      <livery>
+        <name type="string">RAF - VT240</name>
+        <texture>Liveries/VT240.png</texture>
+        <specular>
+          <red>   0.05 </red>
+          <green> 0.05 </green>
+          <blue>  0.05 </blue>
+        </specular>
+        <emission>
+          <red>   0.1 </red>
+          <green> 0.1 </green>
+          <blue>  0.1 </blue>
+        </emission>
+      </livery>
+    </model>
+
+  </sim>
+
+</PropertyList>

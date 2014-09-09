@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <name>engines-dlg</name>
+  <layout>vbox</layout>
+
+  <text><label>Engine Control</label></text>
+  <hrule/>
+  <group>
+  <layout>hbox</layout>
+  <button>
+   <x>0</x>
+   <y>25</y>
+   <width>50</width>
+   <height>30</height>
+   <legend>Cutoff #1</legend>
+   <binding>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[0]/cutoff</property>
+    </binding>
+    </button>
+
+  <checkbox>
+   <x>0</x>
+   <y>5</y>
+   <width>14</width>
+   <height>14</height>
+   <label>ON</label>
+   <property>controls/engines/engine[0]/cutoff</property>
+   <live>true</live>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </checkbox>
+
+  <button>
+   <x>0</x>
+   <y>65</y>
+   <width>50</width>
+   <height>30</height>
+   <legend>Start #1</legend>
+   <binding>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[0]/starter</property>
+    </binding>
+    </button>
+
+  <checkbox>
+   <x>0</x>
+   <y>45</y>
+   <width>14</width>
+   <height>14</height>
+   <label>ON</label>
+   <property>controls/engines/engine[0]/starter</property>
+   <live>true</live>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </checkbox>
+  </group>
+
+
+  <group>
+  <layout>hbox</layout>
+  <button>
+   <x>0</x>
+   <y>25</y>
+   <width>50</width>
+   <height>30</height>
+   <legend>Cutoff #2</legend>
+   <binding>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[1]/cutoff</property>
+    </binding>
+    </button>
+
+  <checkbox>
+   <x>0</x>
+   <y>5</y>
+   <width>14</width>
+   <height>14</height>
+   <label>ON</label>
+   <property>controls/engines/engine[1]/cutoff</property>
+   <live>true</live>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </checkbox>
+  <button>
+   <x>0</x>
+   <y>65</y>
+   <width>50</width>
+   <height>30</height>
+   <legend>Start #2</legend>
+   <binding>
+        <command>property-toggle</command>
+        <property>/controls/engines/engine[1]/starter</property>
+    </binding>
+    </button>
+
+  <checkbox>
+   <x>0</x>
+   <y>45</y>
+   <width>14</width>
+   <height>14</height>
+   <label>ON</label>
+   <property>controls/engines/engine[1]/starter</property>
+   <live>true</live>
+   <binding>
+    <command>dialog-update</command>
+   </binding>
+  </checkbox>
+  </group>
+
+<hrule/>
+
+  <button>
+    <legend>Close</legend>
+    <default>true</default>
+    <key>Esc</key>
+    <padding>10</padding>
+    <binding>
+      <command>dialog-apply</command>
+    </binding>
+    <binding>
+      <command>dialog-close</command>
+    </binding>
+  </button>
+
+</PropertyList>

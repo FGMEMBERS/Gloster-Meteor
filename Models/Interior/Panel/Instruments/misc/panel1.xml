@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+
+  <path>fuelvalves.ac</path>
+ 
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>fondswitch</object-name>
+    <object-name>switch_1</object-name>
+    <object-name>switch_3</object-name>
+    <object-name>switch_wgl</object-name>
+    <object-name>switch_wgr</object-name>
+    <object-name>switch_2</object-name>
+    <object-name>switch_4</object-name>
+    <object-name>switch_lmain</object-name>
+    <object-name>switch_rmain</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>fondswitch</object-name>
+    <object-name>switch_1</object-name>
+    <object-name>switch_3</object-name>
+    <object-name>switch_wgl</object-name>
+    <object-name>switch_wgr</object-name>
+    <object-name>switch_2</object-name>
+    <object-name>switch_4</object-name>
+    <object-name>switch_lmain</object-name>
+    <object-name>switch_rmain</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+</PropertyList>

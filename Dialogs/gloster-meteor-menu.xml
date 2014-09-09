@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <default>
+    <menu n="10">
+      <label>Gloster Meteor</label>
+      <enabled type="bool">true</enabled>
+      <item>
+        <label>Select Livery</label>
+        <binding>
+          <command>nasal</command>
+          <script>aircraft.livery.dialog.toggle()</script>
+        </binding>
+      </item>
+      <item>
+        <label>Engine Control</label>
+        <binding>
+          <command>nasal</command>
+          <script>dialogs.engine_control.open()</script>
+        </binding>
+      </item>
+<!--
+      <item>
+        <label>Immatriculation</label>
+        <binding>
+          <command>nasal</command>
+          <script>gloster-meteor.immat_dialog.toggle()</script>
+        </binding>
+      </item>
+-->
+    </menu>
+  </default>
+
+</PropertyList>
+

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<?xml-stylesheet type="text/xsl" href="http://jsbsim.sf.net/JSBSimScript.xsl"?>
+<runscript xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="http://jsbsim.sf.net/JSBSimScript.xsd"
+    name="Cruise flight in JetStar-II.">
+
+  <description>
+    This is a very simple script that tries to take off
+  </description>
+
+  <use aircraft="gloster-meteor-jsb" initialize="takeoff_init"/> 
+
+  <run start="30" end="400" dt="0.008333">
+
+    <property value="0"> simulation/notify-time-trigger </property>
+
+    <event name="Set engines running">
+      <condition> simulation/sim-time-sec le 0.1 </condition>
+      <set name="propulsion/engine[0]/set-running" value="1"/>
+      <set name="propulsion/engine[1]/set-running" value="1"/>
+      <set name="gear/gear-cmd-norm" value="1"/>
+      <set name="gear/gear-pos-norm" value="1"/>
+      <set name="fcs/flap-cmd-norm" value="0.3"/>
+      <set name="fcs/left-brake-cmd-norm" value="1"/>
+      <set name="fcs/right-brake-cmd-norm" value="1"/>
+      <notify/>
+    </event>
+
+    <event name="Throttle up">
+      <description>Increase throttle</description>
+      <condition>simulation/sim-time-sec ge 5</condition>
+      <set name="fcs/throttle-cmd-norm[0]" value="1"/>
+      <set name="fcs/throttle-cmd-norm[1]" value="1"/>
+      <notify/>
+    </event>
+    <event name="Engine Failure">
+      <description>Increase throttle</description>
+      <condition>simulation/sim-time-sec ge 999</condition>
+      <set name="fcs/throttle-cmd-norm[0]" value="1"/>
+      <set name="fcs/throttle-cmd-norm[1]" value="1"/>
+      <notify/>
+    </event>
+
+    <event name="Brakes Released">
+      <description>Release brakes</description>
+      <condition>propulsion/engine/n1 ge 90</condition>
+      <set name="fcs/left-brake-cmd-norm" value="0"/>
+      <set name="fcs/right-brake-cmd-norm" value="0"/>
+      <set name="ap/afcs/theta-trim-rad" value="-0.01"/>
+      <set name="ap/afcs/psi-trim-rad" value="3.1415927"/>
+      <set name="ap/afcs/phi-trim-rad" value="0.0"/>
+      <set name="ap/afcs/pitch-channel-active-norm" value="20"/>
+      <set name="ap/afcs/yaw-channel-active-norm" value="20"/>
+      <set name="ap/afcs/roll-channel-active-norm" value="50"/>
+
+      <notify/>
+    </event>
+
+    <event name="Rotate">
+      <description>Set the pitch to 10 degrees</description>
+      <condition>velocities/vc-kts ge 86</condition>
+      <set name="ap/afcs/theta-trim-rad" value="0.18"/>
+      <set name="ap/afcs/pitch-channel-active-norm" value="20"/>
+      <notify/>
+    </event>
+
+    <event name="Nose Liftoff">
+      <description>Nose gear is airborne</description>
+      <condition>
+        gear/unit/WOW lt 0.1
+        simulation/sim-time-sec ge 5 
+      </condition>
+      <notify>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+      </notify>
+    </event>
+
+    <event name="Main Gear Liftoff">
+      <description>Main gear is airborne</description>
+      <condition>
+        gear/unit[1]/WOW lt 0.1
+        simulation/sim-time-sec ge 5 
+      </condition>
+      <notify>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+      </notify>
+    </event>
+
+    <event name="Gear up">
+      <description>Positive rate of climb</description>
+      <condition>velocities/v-down-fps lt -10</condition>
+      <set name="gear/gear-cmd-norm" value="0."/>
+      <notify>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+      </notify>
+    </event>
+
+    <event name="Flaps up">
+      <description>Flaps up at 500 AGL</description>
+      <condition>position/h-agl-ft gt 500</condition>
+      <set name="fcs/flap-cmd-norm" value="0."/>
+      <notify>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+      </notify>
+    </event>
+
+    <event name="Throttle Back">
+      <description>Increase throttle</description>
+      <condition>simulation/sim-time-sec ge 150</condition>
+      <set name="fcs/throttle-cmd-norm[0]" value=".85"/>
+      <set name="fcs/throttle-cmd-norm[1]" value=".85"/>
+      <set name="ap/afcs/theta-trim-rad" value="0.12"/>
+      <notify/>
+    </event>
+
+    <event name="Level Off">
+      <description>Level off at 12000</description>
+      <condition>position/h-sl-ft gt 12000</condition>
+      <set name="ap/afcs/theta-trim-rad" value="0.02"/>
+      <notify>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+      </notify>
+    </event>
+
+    <event name="Repeating Notify" persistent="true">
+      <description>Output message at 5 second intervals</description>
+      <notify>
+        <property>propulsion/engine[0]/n2</property>
+        <property>propulsion/engine[1]/n2</property>
+        <property>propulsion/engine[0]/thrust-lbs</property>
+        <property>propulsion/engine[1]/thrust-lbs</property>
+        <property>position/h-agl-ft</property>
+        <property>velocities/vc-kts</property>
+        <property>velocities/vt-fps</property>
+        <property>velocities/mach</property>
+        <property>attitude/phi-rad</property>
+        <property>attitude/theta-rad</property>
+        <property>attitude/psi-rad</property>
+        <property>ic/psi-true-deg</property>
+        <property>fcs/elevator-pos-rad</property>
+        <property>ap/elevator-cmd</property>
+        <property>velocities/q-aero-rad_sec</property>
+        <property>velocities/q-rad_sec</property>
+      </notify>
+      <condition> simulation/sim-time-sec >= simulation/notify-time-trigger </condition>
+      <set name="simulation/notify-time-trigger" value="45" type="FG_DELTA"/>
+    </event>
+
+  </run>
+
+</runscript>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>interior.ac</path>
+
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>interieur</object-name>
+    <object-name>planchet</object-name>
+    <object-name>left</object-name>
+    <object-name>right</object-name>
+    <object-name>center</object-name>
+    <object-name>inttour</object-name>
+    <object-name>inttourvitres</object-name>
+    <object-name>inttourverriere</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>intverriere</object-name>
+    <object-name>intverriere2</object-name>
+  </animation>
+
+  <!-- Pilote -->
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Pilot/pilot.xml</path>
+    <offsets>
+      <x-m> -3.620 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.000 </z-m>
+    </offsets>
+  </model>
+    
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/Instruments/seat/seat.xml</path>
+    <offsets>
+      <x-m> -3.700 </x-m>
+      <y-m> -0.000 </y-m>
+      <z-m> -0.100 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Tableau de bord -->
+  <model>
+    <path>Aircraft/Gloster-Meteor/Models/Interior/Panel/panel.xml</path>
+    <offsets>
+      <x-m> -4.360 </x-m>
+      <y-m>  0.000 </y-m>
+      <z-m>  0.170 </z-m>
+    </offsets>
+  </model>
+
+  <!-- Canopy -->
+  <animation>
+    <name>CanopyInterne</name>
+    <object-name>intverriere</object-name>
+    <object-name>inttourverriere</object-name>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>CanopyInterne</object-name>
+    <property>/instrumentation/doors/crew/position-norm</property>
+    <interpolation>
+      <entry><ind> 0.00 </ind><dep>   0 </dep></entry>
+      <entry><ind> 0.25 </ind><dep>  10 </dep></entry>
+      <entry><ind> 0.50 </ind><dep>  20 </dep></entry>
+      <entry><ind> 0.75 </ind><dep>  45 </dep></entry>
+      <entry><ind> 1.00 </ind><dep> 100 </dep></entry>
+    </interpolation>
+    <axis>
+      <x1-m> -3.479 </x1-m>
+      <y1-m>  0.367 </y1-m>
+      <z1-m>  0.287 </z1-m>
+      <x2-m> -4.077 </x2-m>
+      <y2-m>  0.367 </y2-m>
+      <z2-m>  0.202 </z2-m>
+    </axis>
+  </animation>
+
+</PropertyList>
+

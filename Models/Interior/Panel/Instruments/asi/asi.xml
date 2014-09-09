@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>asi.ac</path>
+
+  <animation>
+    <object-name>fond</object-name>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>noshadow</type>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <object-name>vitre</object-name>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>face</object-name>
+    <object-name>needle</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>needle</object-name>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
+    <interpolation>
+      <!--           Knot             Angle                     MPH -->
+      <entry><ind>   0.00 </ind><dep>   6.0 </dep></entry> <!--   0 -->
+      <entry><ind>  52.14 </ind><dep>  25.0 </dep></entry> <!--  60 -->
+      <entry><ind>  69.52 </ind><dep>  42.5 </dep></entry> <!--  80 -->
+      <entry><ind>  86.90 </ind><dep>  65.0 </dep></entry> <!-- 100 -->
+      <entry><ind> 104.28 </ind><dep>  92.5 </dep></entry> <!-- 120 -->
+      <entry><ind> 121.66 </ind><dep> 125.0 </dep></entry> <!-- 140 -->
+      <entry><ind> 139.04 </ind><dep> 157.5 </dep></entry> <!-- 160 -->
+      <entry><ind> 156.42 </ind><dep> 190.0 </dep></entry> <!-- 180 -->
+      <entry><ind> 173.80 </ind><dep> 222.5 </dep></entry> <!-- 200 -->
+      <entry><ind> 191.17 </ind><dep> 253.0 </dep></entry> <!-- 220 -->
+      <entry><ind> 208.55 </ind><dep> 285.0 </dep></entry> <!-- 240 -->
+      <entry><ind> 225.93 </ind><dep> 310.0 </dep></entry> <!-- 260 -->
+      <entry><ind> 243.31 </ind><dep> 340.0 </dep></entry> <!-- 280 -->
+      <entry><ind> 260.69 </ind><dep> 367.5 </dep></entry> <!-- 300 -->
+      <entry><ind> 278.07 </ind><dep> 392.5 </dep></entry> <!-- 320 -->
+      <entry><ind> 295.45 </ind><dep> 417.0 </dep></entry> <!-- 340 -->
+      <entry><ind> 312.83 </ind><dep> 439.5 </dep></entry> <!-- 360 -->
+      <entry><ind> 330.21 </ind><dep> 462.0 </dep></entry> <!-- 380 -->
+      <entry><ind> 347.59 </ind><dep> 484.0 </dep></entry> <!-- 400 -->
+      <entry><ind> 364.97 </ind><dep> 505.5 </dep></entry> <!-- 420 -->
+      <entry><ind> 382.35 </ind><dep> 527.0 </dep></entry> <!-- 440 -->
+      <entry><ind> 399.73 </ind><dep> 548.5 </dep></entry> <!-- 460 -->
+      <entry><ind> 417.11 </ind><dep> 570.0 </dep></entry> <!-- 480 -->
+    </interpolation>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+  </animation>
+ 
+</PropertyList>
+

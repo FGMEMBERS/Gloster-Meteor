@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <sim  include="Nasal/views.xml">
+ 
+    <author>Emmanuel BARANGER (3D/YASim FDM)</author>
+    <author>Ron Jensen (JSBSim FDM)</author>
+
+    <sound>
+      <audible>true</audible>
+      <path>Aircraft/Gloster-Meteor/Sounds/gloster-meteor-sound.xml</path>
+    </sound>
+
+    <model>
+      <path>Aircraft/Gloster-Meteor/Models/gloster-meteor.xml</path>
+      <livery>
+        <file type="string">default</file>
+      </livery>
+    </model>
+
+    <submodels> 
+      <serviceable type="bool">true</serviceable>
+      <path>Aircraft/Gloster-Meteor/Models/effects/guns/submodels.xml</path>
+    </submodels>
+
+    <startup>
+     <splash-texture>Aircraft/Gloster-Meteor/gloster-meteor-splash.png</splash-texture>
+    </startup>
+
+    <multiplay>
+      <chat_display>1</chat_display>
+      <generic> 
+        <int type="int" n="0">  0 </int>                                           <!--  0 immat -->
+        <int type="int" n="1">  0 </int>                                           <!--  1 immat -->
+        <int type="int" n="2">  0 </int>                                           <!--  2 immat -->
+        <int type="int" n="3">  0 </int>                                           <!--  3 immat -->
+        <int type="int" n="4">  0 </int>                                           <!--  4 immat -->
+        <int type="int" n="5">  0 </int>                                           <!--  5 immat -->
+        <int type="bool" n="6" alias="/smoke/active"> 0 </int>                     <!--  6 start smoke -->
+        <int type="int" n="7" alias="smoke/particlepersec"> 50 </int>              <!--  7 particlepersec -->
+        <int type="int" n="10" alias="controls/armament/trigger">0</int>           <!-- 10 reserved for bombable mode -->
+        <float n="0" alias="/instrumentation/doors/crew/position-norm"/>
+        <float n="1" alias="/instrumentation/doors/passenger/position-norm"/>
+        <float n="2" alias="/position/gear-agl-m"> 0 </float>                      <!-- altitude for MP shadow -->
+        <float n="3" alias="/smoke/colors/knob-red">1</float>                      <!-- 3 smoke mixer red setting -->
+        <float n="4" alias="/smoke/colors/knob-green">1</float>                    <!-- 4 smoke mixer green setting -->
+        <float n="5" alias="/smoke/colors/knob-blue">1</float>                     <!-- 5 smoke mixer blue setting -->
+        <string n="9" type="string" />                                             <!-- string[9] reserved for bombable mode -->
+      </generic>
+    </multiplay>
+
+    <help>
+      <title>Gloster Meteor F.3</title>
+      <key>
+        <name>d</name>
+        <desc>Open/Close canopy</desc>
+      </key>
+      <key>
+        <name>e</name>
+        <desc>Guns fire</desc>
+      </key>
+    </help>
+
+    <menubar include="Dialogs/gloster-meteor-menu.xml"/>
+
+  </sim>
+
+  <engines>
+    <engine n="0">
+      <engine-num type="int">0</engine-num>
+      <running>true</running>
+    </engine>
+    <engine n="1">
+      <engine-num type="int">1</engine-num>
+      <running>true</running>
+    </engine>
+  </engines>
+
+  <controls>
+    <armament>
+     <trigger type="bool">false</trigger>
+     <master-arm type="bool">false</master-arm>
+     <position-norm type="int">1</position-norm>
+    </armament>
+  </controls>
+
+  <input>
+    <keyboard include="Nasal/gloster-meteor-keyboard.xml"/>
+  </input>
+
+  <nasal>
+    <doors>
+      <file>Aircraft/Gloster-Meteor/Nasal/doors.nas</file>
+    </doors>
+    <glostermeteor>
+      <file>Aircraft/Gloster-Meteor/Nasal/liveries.nas</file>
+   </glostermeteor>
+   <dialogs>
+      <file>Aircraft/Gloster-Meteor/Nasal/engines.nas</file>
+   </dialogs>
+   <guns>
+      <file>Aircraft/Gloster-Meteor/Nasal/weapons.nas</file>
+      <file>Aircraft/Gloster-Meteor/Nasal/revi.nas</file>
+    </guns>
+  </nasal>
+
+</PropertyList>
+

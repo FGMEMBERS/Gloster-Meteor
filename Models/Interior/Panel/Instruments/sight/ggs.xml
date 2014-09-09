@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList> 
+
+  <path>ggs.ac</path>
+    
+  <animation>
+    <!-- Objets opaques -->
+    <object-name>ggs</object-name>
+    <object-name>knob</object-name>
+
+    <!-- Objets transparents -->
+    <object-name>glass</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <object-name>glass</object-name>
+    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
+    <name>vitre</name>
+  </animation>
+
+  <animation> 
+    <type>material</type>
+    <object-name>ggs</object-name>
+    <object-name>knob</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>  
+
+</PropertyList>

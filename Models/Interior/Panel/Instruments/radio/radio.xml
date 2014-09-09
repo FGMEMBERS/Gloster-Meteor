@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <path>radio-panel.ac</path>
+
+  <animation>
+    <object-name>radio_panel</object-name>
+    <object-name>rect</object-name>
+    <object-name>cknob-right</object-name>
+    <object-name>knob_volume</object-name>
+    <object-name>knob_tune</object-name>
+    <object-name>knob_tune_mid</object-name>
+    <object-name>cknob-left</object-name>
+    <object-name>cknob-left</object-name>
+    <object-name>knob_tune_left</object-name>
+    <object-name>knob_tune_right</object-name>
+    <object-name>toggle_switch-3pos-sh</object-name>
+    <object-name>preset_flap_hinges</object-name>
+    <object-name>knob</object-name>
+    <object-name>cknob-vol</object-name>
+    <object-name>digit1</object-name>
+    <object-name>digit2</object-name>
+    <object-name>digit3</object-name>
+    <object-name>digit_decimal</object-name>
+    <object-name>digit4</object-name>
+    <object-name>digit5</object-name>
+    <object-name>cdigit1</object-name>
+    <object-name>cdigit2</object-name>
+    <object-name>cdigit3</object-name>
+    <object-name>cdigit4</object-name>
+    <object-name>cdigit5</object-name>
+    <object-name>knob_volume</object-name>
+
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>digit1</object-name>
+    <object-name>digit2</object-name>
+    <object-name>digit3</object-name>
+    <object-name>digit_decimal</object-name>
+    <object-name>digit4</object-name>
+    <object-name>digit5</object-name>
+    <object-name>cdigit1</object-name>
+    <object-name>cdigit2</object-name>
+    <object-name>cdigit3</object-name>
+    <object-name>cdigit4</object-name>
+    <object-name>cdigit5</object-name>
+    <emission>
+      <factor-prop>/systems/electrical/outputs/instrument-lights</factor-prop>
+      <red>   0.50 </red>
+      <green> 0.25 </green>
+      <blue>  0.25 </blue>
+    </emission>
+  </animation>
+
+  <!-- Main Frequency Display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>digit1</object-name>
+    <property>/sim/model/lightning/radios/nav[0]/digit1</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>digit2</object-name>
+    <property>/sim/model/lightning/radios/nav[0]/digit2</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>digit3</object-name>
+    <property>/sim/model/lightning/radios/nav[0]/digit3</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>digit4</object-name>
+    <property>/sim/model/lightning/radios/nav[0]/digit4</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>digit5</object-name>
+    <property>/sim/model/lightning/radios/nav[0]/digit5</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>knob_volume</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/vol</property>
+    <factor> 290 </factor>
+    <axis>
+      <x> -1 </x>
+      <y>  0 </y>
+      <z>  0 </z>
+    </axis>
+    <center>
+      <x-m> 0.005 </x-m>
+      <y-m> 0.006 </y-m>
+      <z-m> 0.027 </z-m>
+    </center>
+  </animation>
+  
+  <!-- Backup Frequency Display -->
+  <animation>
+    <type>textranslate</type>
+    <object-name>cdigit1</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/digit1</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>cdigit2</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/digit2</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>cdigit3</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/digit3</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>cdigit4</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/digit4</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>textranslate</type>
+    <object-name>cdigit5</object-name>
+    <property>/sim/model/lightning/radios/comm[0]/digit5</property>
+    <factor> 0.1 </factor>
+    <axis>
+      <x> 0 </x>
+      <y> 1 </y>
+      <z> 0 </z>
+    </axis>
+  </animation>
+
+</PropertyList>
+
