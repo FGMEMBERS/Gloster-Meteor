@@ -9,7 +9,7 @@ data 5
 pedal
 texture "pedal.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 18
 0.026254 -0.021428 -0.0466
 -0.025539 0.089641 -0.0466

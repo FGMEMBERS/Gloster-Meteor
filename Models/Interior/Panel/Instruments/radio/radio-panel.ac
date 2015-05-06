@@ -9,7 +9,7 @@ data 7
 cdigit1
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.001849 -0.039153 0.007528
 0.001849 -0.039153 0.011897
@@ -31,7 +31,7 @@ data 7
 cdigit2
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.001849 -0.030624 0.002903
 0.001849 -0.030624 0.007271
@@ -53,7 +53,7 @@ data 7
 cdigit3
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.001849 -0.039153 -0.0018
 0.001849 -0.039153 0.002569
@@ -75,7 +75,7 @@ data 7
 cdigit4
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.001849 -0.030624 -0.007273
 0.001849 -0.030624 -0.002905
@@ -97,7 +97,7 @@ data 7
 cdigit5
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.001849 -0.039153 -0.011898
 0.001849 -0.039153 -0.00753
@@ -119,7 +119,7 @@ data 10
 cknob-left
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 202
 0.013633 -0.032833 0.037279
 0.007507 -0.032833 0.037279
@@ -1448,7 +1448,7 @@ data 11
 cknob-right
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 202
 0.015223 -0.035162 -0.030618
 0.007507 -0.035162 -0.023909
@@ -2777,7 +2777,7 @@ data 9
 cknob-vol
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 176
 0.019945 -0.033904 -0.02702
 0.015397 -0.033904 -0.02702
@@ -3989,7 +3989,7 @@ data 6
 digit1
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.06334 0.008227
 0.003577 0.06334 0.012116
@@ -4011,7 +4011,7 @@ data 6
 digit2
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.05859 0.003184
 0.003577 0.05859 0.007074
@@ -4033,7 +4033,7 @@ data 6
 digit3
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.06334 -0.00152
 0.003577 0.06334 0.00237
@@ -4055,7 +4055,7 @@ data 6
 digit4
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.05859 -0.007854
 0.003577 0.05859 -0.003964
@@ -4077,7 +4077,7 @@ data 6
 digit5
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.06334 -0.012269
 0.003577 0.06334 -0.008379
@@ -4099,7 +4099,7 @@ data 13
 digit_decimal
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 4
 0.003577 0.06334 -0.00335
 0.003577 0.06334 -0.002289
@@ -4121,7 +4121,7 @@ data 4
 knob
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 27
 0.006841 0.013764 0.001428
 0.006745 0.014319 0.000925
@@ -4298,7 +4298,7 @@ data 9
 knob_tune
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 70
 0.003791 0.03214 0.026153
 0.002213 0.03214 0.013275
@@ -4741,7 +4741,7 @@ data 14
 knob_tune_left
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 73
 0.004777 0.057431 0.031689
 0.004777 0.058454 0.031644
@@ -5276,7 +5276,7 @@ data 13
 knob_tune_mid
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 73
 0.004777 0.044987 -0.000474
 0.004777 0.04601 -0.000519
@@ -5811,7 +5811,7 @@ data 15
 knob_tune_right
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 73
 0.007045 0.057431 -0.032498
 0.007045 0.060376 -0.033009
@@ -6346,7 +6346,7 @@ data 11
 knob_volume
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 55
 0.002701 0.021385 -0.003297
 0.002701 0.022563 -0.001616
@@ -6646,7 +6646,7 @@ data 18
 preset_flap_hinges
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 38
 0.004477 -0.00219 0.04477
 0.003361 -0.00277 0.04477
@@ -6903,7 +6903,7 @@ data 11
 radio_panel
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 81
 0.002294 0.058592 0.012667
 0.0023 0.0562 0.015729
@@ -7455,7 +7455,7 @@ data 4
 rect
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 188
 0.007123 0.030534 -0.030228
 0.007735 0.030217 -0.030317
@@ -8672,7 +8672,7 @@ data 21
 toggle_switch-3pos-sh
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 129
 0.00762 -0.022476 -0.023261
 0.007606 -0.022445 -0.023512
@@ -9479,7 +9479,7 @@ data 6
 visses
 texture "radio.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 340
 0.00332 0.046202 -0.048977
 0.00332 0.046959 -0.048815

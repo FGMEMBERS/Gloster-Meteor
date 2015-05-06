@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <armament>
+    <trigger type="bool">false</trigger>
+    <master-arm type="bool">false</master-arm>
+    <position-norm type="int">1</position-norm>
+  </armament>
+  
+</PropertyList>

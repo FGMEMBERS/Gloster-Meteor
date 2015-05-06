@@ -9,7 +9,7 @@ data 6
 Switch
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 18
 -0.000179 -0.000019 -0
 0.012947 0.001399 0.000016
@@ -122,7 +122,7 @@ data 4
 base
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 62
 0.000112 0.000005 0
 -0.000005 0 0.003586
@@ -551,7 +551,7 @@ data 4
 fond
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 10
 0.004477 -0.033002 -0.018433
 -0.003835 0.031778 0.01871

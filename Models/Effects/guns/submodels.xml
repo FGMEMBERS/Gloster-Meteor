@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<PropertyList>
+
+  <cannon>
+    <model>Aircraft/Gloster-Meteor/Models/Effects/guns/tracer.xml</model>
+    <speed>3363.0</speed>
+    <cd>0.193</cd>
+    <weight>0.9369635</weight>
+    <eda>0.007609</eda>
+    <fuse-range>0</fuse-range>
+    <life>30</life>
+    <trigger>controls/armament/trigger</trigger>
+    <expiry>true</expiry>
+    <repeat>true</repeat>
+    <delay>0.03</delay>
+    <count>400</count>
+    <wind>false</wind>
+    <collision>true</collision>
+    <impact>true</impact>
+    <impact-report>sim/ai/aircraft/impact/bullet</impact-report>
+    <submodel-path>Aircraft/Gloster-Meteor/Models/Effects/guns/bullet-submodel.xml</submodel-path>
+    <impact-reports>sim/ai/aircraft/collision/cannon</impact-reports>
+    <yaw-offset>0</yaw-offset>
+    <pitch-offset>0</pitch-offset>
+  </cannon>
+
+  <submodel>
+    <name>Gun left down</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <yaw-offset  alias="../../cannon/yaw-offset"/>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+    <x-offset>  1.47228590 </x-offset> <!--  1.47228590 m = -4.83057 ft -->
+    <y-offset>  0.15243523 </y-offset> <!--  0.15243523 m = -0.50014 ft -->
+    <z-offset> -0.17584273 </z-offset> <!-- -0.17584273 m = -0.57694 ft -->
+  </submodel>
+
+  <submodel>
+    <name>Gun left up</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <yaw-offset  alias="../../cannon/yaw-offset"/>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+    <x-offset>  1.472285900 </x-offset> <!--  1.472285900 m = -4.83057 ft -->
+    <y-offset>  0.150816820 </y-offset> <!--  0.150816820 m = -0.49483 ft -->
+    <z-offset> -0.077409326 </z-offset> <!-- -0.077409326 m = -0.25398 ft -->
+  </submodel>
+
+  <submodel>
+    <name>Gun right down</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <yaw-offset  alias="../../cannon/yaw-offset"/>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+    <x-offset>  1.47228590 </x-offset> <!--  1.47228590 m = -4.83057 ft -->
+    <y-offset> -0.15243523 </y-offset> <!-- -0.15243523 m =  0.50014 ft -->
+    <z-offset> -0.17584273 </z-offset> <!-- -0.17584273 m = -0.57694 ft -->
+  </submodel>
+  
+  <submodel>
+    <name>Gun right up</name>
+    <model alias="../../cannon/model"/>
+    <trigger alias="../../cannon/trigger"/>
+    <speed alias="../../cannon/speed"/>
+    <cd alias="../../cannon/cd"/>
+    <eda alias="../../cannon/eda"/>
+    <fuse-range alias="../../cannon/fuse-range"/>
+    <weight alias="../../cannon/weight"/>
+    <life alias="../../cannon/life"/>
+    <repeat alias="../../cannon/repeat"/>
+    <delay alias="../../cannon/delay"/>
+    <count alias="../../cannon/count"/>
+    <wind alias="../../cannon/wind"/>
+    <expiry alias="../../cannon/expiry"/>
+    <collision alias="../../cannon/collision"/>
+    <impact alias="../../cannon/impact"/>
+    <submodel-path alias="../../cannon/submodel-path"/>
+    <yaw-offset  alias="../../cannon/yaw-offset"/>
+    <pitch-offset alias="../../cannon/pitch-offset"/>
+    <x-offset>  1.472285900 </x-offset> <!--  1.472285900 m = -4.83057 ft -->
+    <y-offset> -0.150816820 </y-offset> <!-- -0.150816820 m =  0.49483 ft -->
+    <z-offset> -0.077409326 </z-offset> <!-- -0.077409326 m = -0.25398 ft -->
+  </submodel>
+  
+</PropertyList>

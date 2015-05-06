@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.9 0.9 0.9 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 14
 OBJECT poly
@@ -8,9 +8,9 @@ name "back"
 loc 0 0 -0
 data 4
 back
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 17
 0.000049 0.00005 -0.026072
 0.000049 0.01029 -0.024087
@@ -132,9 +132,9 @@ name "disk-B-O"
 loc 0 0 -0
 data 8
 disk-B-O
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001896 0 -0.00404
 0.001896 0.002674 -0.002857
@@ -200,9 +200,9 @@ name "disk-F-G"
 loc 0 0 -0
 data 8
 disk-F-G
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 -0.018479 -0.008811
 0.001959 -0.021153 -0.007628
@@ -268,9 +268,9 @@ name "disk-F-R"
 loc 0 0 -0
 data 8
 disk-F-R
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 -0.018557 0.008331
 0.001959 -0.015883 0.007148
@@ -336,9 +336,9 @@ name "disk-F-UL"
 loc 0 0 -0
 data 9
 disk-F-UL
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001888 0.020213 -0.00007
 0.001888 0.017538 -0.002927
@@ -404,9 +404,9 @@ name "disk-P-G"
 loc 0 0 -0
 data 8
 disk-P-G
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 -0.009918 -0.018921
 0.001959 -0.006136 -0.018921
@@ -472,9 +472,9 @@ name "disk-P-R"
 loc 0 0 -0
 data 8
 disk-P-R
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 0.002904 0.019513
 0.001959 0.00023 0.02237
@@ -540,9 +540,9 @@ name "disk-P-UL"
 loc 0 0 -0
 data 9
 disk-P-UL
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001802 0.017681 0.008808
 0.001802 0.015006 0.005952
@@ -608,9 +608,9 @@ name "disk-S-G"
 loc 0 0 -0
 data 8
 disk-S-G
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 -0.009997 0.018118
 0.001959 -0.006215 0.022158
@@ -676,9 +676,9 @@ name "disk-S-R"
 loc 0 0 -0
 data 8
 disk-S-R
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001959 0.002825 -0.023502
 0.001959 0.0055 -0.022318
@@ -744,9 +744,9 @@ name "disk-S-UL"
 loc 0 0 -0
 data 9
 disk-S-UL
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 9
 0.001802 0.017642 -0.005595
 0.001802 0.020316 -0.006778
@@ -812,9 +812,9 @@ name "face"
 loc 0 0 -0
 data 4
 face
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 97
 0.002284 0.01897 -0.018436
 0.002284 0.001258 -0.001258
@@ -1585,9 +1585,9 @@ name "fond"
 loc 0 0 -0
 data 4
 fond
-texture "colors.png"
+texture "gear.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 161
 -0.000736 0.00524 0.024571
 -0.000736 0.00014 0.025054
@@ -2597,7 +2597,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.00172 0.000271 -0.000286
 0.002446 0.02258 -0.014992

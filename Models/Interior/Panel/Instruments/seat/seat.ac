@@ -9,7 +9,7 @@ data 8
 armature
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 1286
 0.243083 -0.237125 -0.210011
 0.24744 -0.242434 -0.210011
@@ -8969,7 +8969,7 @@ data 5
 tissu
 texture "seat.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 132
 -0.139475 0.075729 0.216546
 0.143057 0.075729 0.216546

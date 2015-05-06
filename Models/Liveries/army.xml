@@ -8,17 +8,12 @@
 
       <livery>
         <name type="string">Army</name>
-        <texture>Liveries/army.png</texture>
+        <texture>Liveries/1024x1024/army.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>
           <blue>  0.05 </blue>
         </specular>
-        <emission>
-          <red>   0.1 </red>
-          <green> 0.1 </green>
-          <blue>  0.1 </blue>
-        </emission>
       </livery>
     </model>
 

@@ -441,76 +441,68 @@
     </stall>
 
     <gun>
-      <name>Gun up left</name>
+      <name>Gun down left</name>
       <mode>looped</mode>
-      <path>Aircraft/Gloster-Meteor/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/Gloster-Meteor/Sounds/gunfire.wav</path>
       <condition>
-        <and>
-          <property>controls/armament/trigger</property>
-          <property>ai/submodels/submodel[0]/count</property>
-        </and>
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel[0]/count</property>
       </condition>
       <position>
-        <x> -5.363 </x>
-        <y> -0.125 </y>
-        <z>  0.414 </z>
+        <x> -4.83057 </x>
+        <y> -0.50014 </y>
+        <z> -0.57694 </z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>500</max-dist>
+    </gun>
+    
+    <gun>
+      <name>Gun up left</name>
+      <mode>looped</mode>
+      <path>Aircraft/Gloster-Meteor/Sounds/gunfire.wav</path>
+      <condition>
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel[0]/count</property>
+      </condition>
+      <position>
+        <x> -4.83057 </x>
+        <y> -0.50014 </y>
+        <z> -0.57694 </z>
       </position>
       <reference-dist>100</reference-dist>
       <max-dist>500</max-dist>
     </gun>
 
+    <gun>
+      <name>Gun down left</name>
+      <mode>looped</mode>
+      <path>Aircraft/Gloster-Meteor/Sounds/gunfire.wav</path>
+      <condition>
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel[0]/count</property>
+      </condition>
+      <position>
+        <x> -4.83057 </x>
+        <y>  0.50014 </y>
+        <z> -0.57694 </z>
+      </position>
+      <reference-dist>100</reference-dist>
+      <max-dist>500</max-dist>
+    </gun>
+    
     <gun>
       <name>Gun up right</name>
       <mode>looped</mode>
-      <path>Aircraft/Gloster-Meteor/Sounds/gunfire_1.wav</path>
+      <path>Aircraft/Gloster-Meteor/Sounds/gunfire.wav</path>
       <condition>
-        <and>
-          <property>controls/armament/trigger</property>
-          <property>ai/submodels/submodel[0]/count</property>
-        </and>
+        <property>controls/armament/trigger</property>
+        <property>ai/submodels/submodel[0]/count</property>
       </condition>
       <position>
-        <x> -5.363 </x>
-        <y>  0.125 </y>
-        <z>  0.414 </z>
-      </position>
-      <reference-dist>100</reference-dist>
-      <max-dist>500</max-dist>
-    </gun>
-
-    <gun>
-      <name>Gun down left</name>
-      <mode>looped</mode>
-      <path>Aircraft/Gloster-Meteor/Sounds/gunfire_1.wav</path>
-      <condition>
-        <and>
-          <property>controls/armament/trigger</property>
-          <property>ai/submodels/submodel[0]/count</property>
-        </and>
-      </condition>
-      <position>
-        <x> -5.084 </x>
-        <y> -0.306 </y>
-        <z>  0.237 </z>
-      </position>
-      <reference-dist>100</reference-dist>
-      <max-dist>500</max-dist>
-    </gun>
-
-    <gun>
-      <name>Gun down left</name>
-      <mode>looped</mode>
-      <path>Aircraft/Gloster-Meteor/Sounds/gunfire_1.wav</path>
-      <condition>
-        <and>
-          <property>controls/armament/trigger</property>
-          <property>ai/submodels/submodel[0]/count</property>
-        </and>
-      </condition>
-      <position>
-        <x> -5.084 </x>
-        <y>  0.306 </y>
-        <z>  0.237 </z>
+        <x> -4.83057 </x>
+        <y>  0.50014 </y>
+        <z> -0.57694 </z>
       </position>
       <reference-dist>100</reference-dist>
       <max-dist>500</max-dist>

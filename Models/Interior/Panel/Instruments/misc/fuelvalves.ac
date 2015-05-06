@@ -9,7 +9,7 @@ data 4
 fond
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 36
 -0.003595 -0.029043 -0.116773
 -0.003595 -0.029043 0.116803
@@ -231,7 +231,7 @@ data 10
 fondswitch
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 90
 0.001795 -0.003964 -0.110344
 0.001797 -0.010936 -0.110344
@@ -612,7 +612,7 @@ data 8
 switch_1
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001795 -0.00681 -0.034127
 0.001796 -0.010333 -0.034128
@@ -788,7 +788,7 @@ data 8
 switch_2
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.006811 0.052359
 0.001797 -0.010334 0.052359
@@ -964,7 +964,7 @@ data 8
 switch_3
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.00681 0.031251
 0.001797 -0.010334 0.031251
@@ -1140,7 +1140,7 @@ data 8
 switch_4
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001795 -0.006249 -0.055983
 0.001796 -0.009772 -0.055983
@@ -1316,7 +1316,7 @@ data 10
 switch_aft
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.007371 0.073093
 0.001797 -0.010895 0.073093
@@ -1492,7 +1492,7 @@ data 10
 switch_fwd
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.007372 0.092333
 0.001797 -0.010895 0.092333
@@ -1668,7 +1668,7 @@ data 12
 switch_lmain
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001795 -0.005315 -0.079892
 0.001796 -0.008838 -0.079893
@@ -1844,7 +1844,7 @@ data 12
 switch_rmain
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001795 -0.005688 -0.108659
 0.001796 -0.009211 -0.108659
@@ -2020,7 +2020,7 @@ data 10
 switch_wgl
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.00681 0.009209
 0.001797 -0.010333 0.009209
@@ -2196,7 +2196,7 @@ data 10
 switch_wgr
 texture "misc.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 25
 0.001796 -0.006063 -0.012459
 0.001797 -0.009586 -0.012459
