@@ -8,17 +8,12 @@
     <model>
       <livery>
         <name type="string">FAA - C-005</name>
-        <texture>Liveries/C-005.png</texture>
+        <texture>Liveries/2048x2048/C-005.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>
           <blue>  0.05 </blue>
         </specular>
-        <emission>
-          <red>   0.1 </red>
-          <green> 0.1 </green>
-          <blue>  0.1 </blue>
-        </emission>
       </livery>
     </model>
 

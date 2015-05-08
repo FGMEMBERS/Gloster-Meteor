@@ -9,7 +9,7 @@ data 4
 face
 texture "airbrakes.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 45
 0.025623 0.000474 -0.017376
 0.023663 0.006521 -0.017376
@@ -359,7 +359,7 @@ data 4
 fond
 texture "airbrakes.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 36
 -0.027641 0.00017 0.019228
 -0.027641 -0.00668 0.019228
@@ -574,7 +574,7 @@ data 5
 lever
 texture "airbrakes.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 29
 0.002347 -0.029077 -0.002249
 -0.002365 -0.029077 -0.002249

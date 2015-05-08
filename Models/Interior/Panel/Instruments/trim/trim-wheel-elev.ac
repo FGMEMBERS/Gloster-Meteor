@@ -9,7 +9,7 @@ data 4
 trim
 texture "trim-wheel-elev.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 180
 -0.064537 -0.017348 -0.008475
 -0.060909 -0.035211 -0.008475

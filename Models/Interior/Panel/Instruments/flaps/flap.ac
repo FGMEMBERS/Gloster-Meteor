@@ -9,7 +9,7 @@ data 4
 fond
 texture "flaps.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 90
 0.002762 0.027074 0.019267
 0.000426 0.027074 0.019267
@@ -576,7 +576,7 @@ data 5
 lever
 texture "flaps.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 133
 -0.011222 -0.002365 -0.002205
 -0.011222 0.002348 -0.002205

@@ -9,7 +9,7 @@ data 6
 handle
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 112
 0.027081 -0.007355 -0.036116
 0.02513 -0.007572 -0.036116
@@ -852,7 +852,7 @@ data 7
 lamp-of
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 79.999998
+crease 180.000005
 numvert 25
 0.003363 0.030269 -0.028273
 0.002947 0.029031 -0.027053
@@ -1048,7 +1048,7 @@ data 7
 lamp-on
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 79.999998
+crease 180.000005
 numvert 25
 0.000065 0.03027 -0.024014
 0.000065 0.03332 -0.025259
@@ -1244,7 +1244,7 @@ data 5
 mount
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 64
 -0.004755 0.062266 -0.034574
 0.000023 0.062266 -0.034574
@@ -1723,7 +1723,7 @@ data 8
 override
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 16
 0.010847 -0.052958 0.007429
 0.011189 -0.05064 0.007429
@@ -1842,7 +1842,7 @@ data 6
 switch
 texture "ldg-controls.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0.020733 -0.037435 -0.030301
 0.019292 -0.038065 -0.027743

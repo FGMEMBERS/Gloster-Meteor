@@ -13,14 +13,12 @@
     <object-name>glass</object-name>
   </animation>
 
-  <animation>
-    <type>shader</type>
-    <shader>chrome</shader>
+  <!-- working for Rembrandt -->
+  <effect>
+    <inherits-from>Aircraft/Gloster-Meteor/Models/Effects/Glass/glass</inherits-from>
     <object-name>glass</object-name>
-    <texture>Aircraft/Generic/Effects/glass_shader.png</texture>
-    <name>vitre</name>
-  </animation>
-
+  </effect>
+  
   <animation> 
     <type>material</type>
     <object-name>ggs</object-name>

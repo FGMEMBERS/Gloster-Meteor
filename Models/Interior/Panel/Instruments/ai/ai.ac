@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.9 0.9 0.9 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 0.9 0.9 0.9 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 5
 OBJECT poly
@@ -10,7 +10,7 @@ data 8
 aircraft
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 169.999993
 numvert 138
 0.000605 -0.022239 -0.015093
 0.000605 -0.024696 -0.010414
@@ -1057,7 +1057,7 @@ data 4
 face
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 17
 -0.001568 -0.000195 -0.031435
 -0.001568 0.011476 -0.029045
@@ -1181,7 +1181,7 @@ data 4
 fond
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 61.000003
+crease 180.000005
 numvert 193
 0.001863 -0.000163 0.036426
 0.001863 0.006874 0.035725
@@ -2281,7 +2281,7 @@ data 6
 visses
 texture "ai.png"
 texrep 1.000000 1.000000
-crease 30.000001
+crease 180.000005
 numvert 732
 0.002705 -0.031394 0.035836
 0.002705 -0.034293 0.034328
@@ -7860,7 +7860,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.00276 0.000018 0.000005
 0.003748 0.029115 -0.020017

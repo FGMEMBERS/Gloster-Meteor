@@ -1,6 +1,6 @@
 AC3Db
 MATERIAL "DefaultWhite" rgb 1 1 1  amb 1 1 1  emis 0 0 0  spec 0.5 0.5 0.5  shi 64  trans 0
-MATERIAL "transparent" rgb 0.9 0.9 0.9 amb 1 1 1 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
+MATERIAL "transparent" rgb 1 1 1 amb 0.5 0.5 0.5 emis 0 0 0 spec 1 1 1 shi 64 trans 0.85
 OBJECT world
 kids 4
 OBJECT poly
@@ -10,7 +10,7 @@ data 4
 face
 texture "seahawk-mach.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 17
 0.000136 0 -0.030136
 0.000136 0.01138 -0.027842
@@ -134,7 +134,7 @@ data 4
 fond
 texture "seahawk-mach.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 128
 -0.001239 0.00616 -0.031257
 -0.001239 0.01208 -0.029444
@@ -945,7 +945,7 @@ data 6
 needle
 texture "seahawk-mach.png"
 texrep 1.000000 1.000000
-crease 45.000001
+crease 180.000005
 numvert 14
 0.000606 0.02586 0.000363
 0.000606 0.02796 -0.000075
@@ -1037,7 +1037,7 @@ name "vitre"
 loc 0 0 -0
 data 5
 vitre
-crease 30.000001
+crease 180.000005
 numvert 34
 0.002164 -0.000314 0.000058
 0.002761 0.024957 -0.016827

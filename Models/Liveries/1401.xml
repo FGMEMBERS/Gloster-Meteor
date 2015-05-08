@@ -9,17 +9,12 @@
 
       <livery>
         <name type="string">Egyptian Air Force - 1401</name>
-        <texture>Liveries/1401.png</texture>
+        <texture>Liveries/2048x2048/1401.png</texture>
         <specular>
           <red>   0.05 </red>
           <green> 0.05 </green>
           <blue>  0.05 </blue>
         </specular>
-        <emission>
-          <red>   0.1 </red>
-          <green> 0.1 </green>
-          <blue>  0.1 </blue>
-        </emission>
       </livery>
     </model>
 
