@@ -56,8 +56,6 @@
 
     <object-name>trous</object-name>
     <object-name>echappes</object-name>
-    <object-name>heliceG</object-name>
-    <object-name>heliceD</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -103,8 +101,6 @@
 
     <object-name>trous</object-name>
     <object-name>echappes</object-name>
-    <object-name>heliceG</object-name>
-    <object-name>heliceD</object-name>
     <object-name>axeAH</object-name>
     <object-name>axeAB</object-name>
     <object-name>roueA</object-name>
@@ -334,40 +330,6 @@
       <z-m> -0.654 </z-m>
     </offsets>
   </model>
-
-  <animation>
-    <type>spin</type>
-    <object-name>heliceG</object-name>
-    <property>controls/engines/engine[0]/throttle</property>
-    <factor> 100 </factor>
-    <center>
-      <x-m> -2.774 </x-m>
-      <y-m> -2.356 </y-m>
-      <z-m> -0.654 </z-m>
-    </center>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>spin</type>
-    <object-name>heliceD</object-name>
-    <property>controls/engines/engine[1]/throttle</property>
-    <factor> 100 </factor>
-    <center>
-      <x-m> -2.774 </x-m>
-      <y-m>  2.356 </y-m>
-      <z-m> -0.654 </z-m>
-    </center>
-    <axis>
-      <x> 1 </x>
-      <y> 0 </y>
-      <z> 0 </z>
-    </axis>
-  </animation>
 
   <!-- Animations des ailerons -->
   <animation>
